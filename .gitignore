@@ -24,3 +24,6 @@ rapport/*.toc
 rapport/*.lof
 rapport/*.lot
 rapport/compilation-console.txt
+
+# Rapport conservé uniquement sur le PC
+/rapport/
