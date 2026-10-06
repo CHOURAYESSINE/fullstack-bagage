@@ -1,0 +1,21 @@
+{
+  "dateUtc": "2026-10-02T18:44:47.258Z",
+  "checks": [
+    {
+      "test": "Site public accessible en IPv6 avec TLS reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 5432",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 8080",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 8443",
+      "resultat": "ECHEC"
+    }
+  ]
+}

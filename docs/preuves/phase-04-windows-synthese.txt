@@ -1,0 +1,15 @@
+VALIDATION WINDOWS NATIVE - RESULTATS REELS
+OK - Interface agents accessible par VPN Windows
+OK - Authentification depuis Windows dans le tunnel
+OK - JWT valide accepte sur VPN Windows
+OK - Sans JWT : refus 401 meme sur VPN Windows
+OK - Handshake WireGuard Windows non nul ; cles masquees.
+OK - Meme JWT : API privee inaccessible VPN Windows coupe
+OK - Interface agents inaccessible VPN Windows coupe
+OK - Suivi public reste accessible sans VPN
+OK - Proxy public refuse users avec le meme JWT
+OK - Proxy public refuse vols avec le meme JWT
+OK - Proxy public refuse bagages avec le meme JWT
+OK - Proxy public refuse auth/login avec le meme JWT
+OK - Route privee WireGuard retiree de Windows apres coupure.
+OK - VPN Windows retabli : meme JWT accepte

@@ -1,0 +1,34 @@
+Tests phase 2 - 2026-10-01T13:40:04.7080462Z
+OK - public : healthy, non-root, lecture seule
+OK - agents : healthy, non-root, lecture seule
+OK - Interface publique accessible
+OK - CSP et absence de mise en cache
+OK - Interface agents accessible localement
+OK - Route Angular profonde disponible
+OK - Hote agents non autorise refuse par Nginx
+OK - Origines agents explicitement limitees
+OK - API agents sans JWT refusee
+OK - Connexion administrateur via proxy agents
+OK - Proxy public interdit /api/auth/login avec JWT valide
+OK - Proxy public interdit /api/users avec JWT valide
+OK - Proxy public interdit /api/vols avec JWT valide
+OK - Proxy public interdit /api/bagages avec JWT valide
+OK - Compte fictif Superviseur cree
+OK - Connexion Superviseur via proxy
+OK - Compte fictif AgentEnregistrement cree
+OK - Connexion AgentEnregistrement via proxy
+OK - Compte fictif AgentTri cree
+OK - Connexion AgentTri via proxy
+OK - Compte fictif Administrateur cree
+OK - Connexion Administrateur via proxy
+OK - Creation vol par superviseur via interface agents
+OK - Enregistrement via proxy avec role autorise
+OK - Agent tri sans droit de creation de vol
+OK - Administrateur sans permission metier
+OK - Agent enregistrement sans liste globale
+OK - Superviseur sans gestion des comptes
+OK - Tri vers etape normale accepte
+OK - Saut etape sans superviseur refuse
+OK - Suivi public relie a PostgreSQL
+OK - Suivi sans identite ni identifiant interne
+OK - Modification interdite par le proxy public

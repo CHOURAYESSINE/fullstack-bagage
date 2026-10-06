@@ -1,0 +1,6 @@
+# Démonstration locale seulement : Swagger réel dans le conteneur.
+# Revenir à la configuration principale après les captures.
+services:
+  api:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development

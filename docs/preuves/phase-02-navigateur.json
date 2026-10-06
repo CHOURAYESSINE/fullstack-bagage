@@ -1,0 +1,96 @@
+{
+  "dateUtc": "2026-10-01T13:49:35.534Z",
+  "checks": [
+    {
+      "test": "Styles globaux chargés avec la CSP active",
+      "resultat": "OK"
+    },
+    {
+      "test": "Code de suivi mal formé refusé dans le formulaire",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public Angular : statut trié et deux étapes de PostgreSQL",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route /bagages sans session redirigée vers /connexion",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion superviseur : données réelles et menu sans gestion des comptes",
+      "resultat": "OK"
+    },
+    {
+      "test": "Filtre de vol Angular : un bagage de démonstration retrouvé",
+      "resultat": "OK"
+    },
+    {
+      "test": "Correction superviseur enregistrée depuis Angular avec motif et anomalie visibles",
+      "resultat": "OK"
+    },
+    {
+      "test": "Vol créé depuis le formulaire Angular et visible dans la liste",
+      "resultat": "OK"
+    },
+    {
+      "test": "Agent enregistrement : menus limités à enregistrement et vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Bagage créé depuis Angular : reçu de suivi et historique réel",
+      "resultat": "OK"
+    },
+    {
+      "test": "Déconnexion corrigée : retour connexion et retrait de la console",
+      "resultat": "OK"
+    },
+    {
+      "test": "Agent tri : ni création de bagage ni gestion des comptes dans les menus",
+      "resultat": "OK"
+    },
+    {
+      "test": "Agent tri : uniquement Trié ou Perdu depuis Enregistré, aucun motif superviseur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Transition normale enregistrée depuis le navigateur par AgentTri",
+      "resultat": "OK"
+    },
+    {
+      "test": "Administrateur : accès comptes uniquement, aucun menu métier",
+      "resultat": "OK"
+    },
+    {
+      "test": "Création compte depuis Angular : liste mise à jour et mot de passe effacé",
+      "resultat": "OK"
+    },
+    {
+      "test": "Rendu étroit : page sans débordement global, tableau défilable",
+      "resultat": "OK"
+    },
+    {
+      "test": "Rechargement de page : session en mémoire supprimée et connexion requise",
+      "resultat": "OK"
+    },
+    {
+      "test": "Origine localhost. non autorisée : module agents non chargé, refus affiché",
+      "resultat": "OK"
+    },
+    {
+      "test": "Code valide mais inconnu : erreur 404 lisible, ancien résultat retiré",
+      "resultat": "OK"
+    },
+    {
+      "test": "Parcours UI complet : vol, enregistrement, tri puis suivi public cohérent",
+      "resultat": "OK"
+    }
+  ],
+  "demonstration": {
+    "numeroVol": "UI62281279",
+    "bagageId": "e8cf98de-346f-484f-9279-f7c67c3a7a8f",
+    "trackingId": "E636DBE90950104D8E4FE8435FDB6B9995A4CDAD79341CCD",
+    "compteCree": "ui.formulaire.1790862507893"
+  },
+  "limites": "Parcours réels effectués dans le navigateur intégré ; pas de test VPN ni de charge."
+}

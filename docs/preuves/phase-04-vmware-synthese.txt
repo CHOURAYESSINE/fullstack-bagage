@@ -1,0 +1,26 @@
+VALIDATION VM REELLE - yessine-VMware-Virtual-Platform - Linux
+OK - Interface publique Angular joignable depuis la VM
+OK - Certificat public verifie et TLS moderne
+OK - Sans CA explicite : certificat refuse
+OK - Bagage Kubernetes suivi depuis la VM
+OK - Aucune identite personnelle dans le suivi
+OK - Proxy public refuse /api/users
+OK - Proxy public refuse /api/vols
+OK - Proxy public refuse /api/bagages
+OK - Proxy public refuse /api/auth/login
+OK - Port prive hote 8443 ferme depuis VM
+OK - Port prive hote 18080 ferme depuis VM
+OK - Port prive hote 14201 ferme depuis VM
+OK - HTTPS agents inaccessible sans VPN
+OK - VM : interface agents accessible avec TLS verifie
+OK - VM : authentification dans le tunnel
+OK - VM : JWT accepte sur API privee
+OK - VM : sans JWT acces prive refuse
+OK - Handshake WireGuard VM non nul ; cle masquee
+OK - VM : meme JWT inaccessible apres coupure VPN
+OK - VM sans VPN : / avec meme JWT
+OK - VM sans VPN : /api/users avec meme JWT
+OK - VM sans VPN : /api/vols avec meme JWT
+OK - VM sans VPN : /api/bagages avec meme JWT
+OK - VM sans VPN : /api/auth/login avec meme JWT
+OK - VM : meme JWT accepte apres retablissement

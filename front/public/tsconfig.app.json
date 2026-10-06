@@ -1,0 +1,13 @@
+{
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "files": [
+    "src/main.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "../out-tsc/public",
+    "types": []
+  },
+  "extends": "../tsconfig.json"
+}

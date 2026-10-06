@@ -1,0 +1,69 @@
+{
+  "dateUtc": "2026-10-02T09:36:55.681487+00:00",
+  "checks": [
+    {
+      "test": "Interface Angular agents servie par le pod via WireGuard",
+      "resultat": "OK"
+    },
+    {
+      "test": "Origine Angular reservee au VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion administrateur dans Kubernetes",
+      "resultat": "OK"
+    },
+    {
+      "test": "JWT valide accepte via VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans JWT : refus applicatif 401 meme avec VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Administrateur sans privileges metier : creation vol refusee 403",
+      "resultat": "OK"
+    },
+    {
+      "test": "Creation superviseur avec role explicite",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion superviseur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Creation vol persiste dans PostgreSQL Kubernetes",
+      "resultat": "OK"
+    },
+    {
+      "test": "Enregistrement bagage et code aleatoire",
+      "resultat": "OK"
+    },
+    {
+      "test": "Transition enregistre vers trie",
+      "resultat": "OK"
+    },
+    {
+      "test": "Historique prive accessible au superviseur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public reel : statut trie et historique conserves",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public sans identite du passager",
+      "resultat": "OK"
+    },
+    {
+      "test": "Handshake WireGuard reel avec le pod Kubernetes",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat agents valide et TLS 1.2 ou 1.3",
+      "resultat": "OK"
+    }
+  ]
+}

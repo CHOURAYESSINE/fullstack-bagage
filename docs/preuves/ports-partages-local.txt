@@ -1,0 +1,4 @@
+OK - 192.168.1.123:80 inaccessible depuis VM
+OK - 192.168.1.123:5432 inaccessible depuis VM
+OK - 192.168.1.123:8080 inaccessible depuis VM
+OK - 192.168.1.123:5005 inaccessible depuis VM

@@ -1,0 +1,24 @@
+{
+  "fuseau": "Africa/Lagos",
+  "captures": [
+    {
+      "origine": "Capture réelle Docker Desktop, JPEG original sans retouche",
+      "octets": 102809,
+      "fichier": "01-reseau-conteneurs.jpg",
+      "sha256": "04A26030EE465579F550A9E75550899613416A07A65E89F1994A74FBBA6CAE82"
+    },
+    {
+      "origine": "Capture réelle Docker Desktop, JPEG original sans retouche",
+      "octets": 135229,
+      "fichier": "02-vpn-coupure-retablissement.jpg",
+      "sha256": "13FB13314012DC657E89E3AB23DD5718E45074C75AC790E263D8A93CACA037D8"
+    },
+    {
+      "origine": "Capture réelle Docker Desktop, JPEG original sans retouche",
+      "octets": 113528,
+      "fichier": "03-acces-hors-vpn.jpg",
+      "sha256": "B07821783D2A654B0AFA94E35F032D866BC86FD05A0664695B1B561EB2802628"
+    }
+  ],
+  "dateLocale": "2026-10-02"
+}

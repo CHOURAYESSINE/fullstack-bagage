@@ -1,0 +1,5 @@
+NAME                        IMAGE                     COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+fullstack-bagage-agents-1   fullstack-bagage-agents   "/docker-entrypoint.…"   agents    4 minutes ago    Up 4 minutes (healthy)    127.0.0.1:14201->8080/tcp
+fullstack-bagage-api-1      fullstack-bagage-api      "dotnet Bagage.Api.d…"   api       29 minutes ago   Up 29 minutes (healthy)   127.0.0.1:18080->8080/tcp
+fullstack-bagage-db-1       postgres:16               "docker-entrypoint.s…"   db        6 hours ago      Up 34 minutes (healthy)   5432/tcp
+fullstack-bagage-public-1   fullstack-bagage-public   "/docker-entrypoint.…"   public    7 minutes ago    Up 7 minutes (healthy)    127.0.0.1:14200->8080/tcp

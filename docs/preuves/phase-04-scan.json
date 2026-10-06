@@ -1,0 +1,11 @@
+{
+  "cible": "k3d-bagage-server-0",
+  "portsTcpOuverts": {
+    "5432": false,
+    "8080": false,
+    "8443": false,
+    "18080": false,
+    "14201": false,
+    "31443": true
+  }
+}

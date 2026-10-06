@@ -1,0 +1,50 @@
+Recette métier Kubernetes - 10/02/2026 10:40:58
+OK - Connexion administrateur initial
+OK - Creation compte fictif Superviseur
+OK - Connexion Superviseur
+OK - Creation compte fictif AgentEnregistrement
+OK - Connexion AgentEnregistrement
+OK - Creation compte fictif AgentTri
+OK - Connexion AgentTri
+OK - Creation compte fictif Administrateur
+OK - Connexion Administrateur
+OK - Superviseur cree vol
+OK - Agent tri ne cree pas de vol
+OK - Administrateur sans droits metier
+OK - Superviseur sans gestion des comptes
+OK - Agent enregistrement sans liste globale
+OK - Sans JWT : API privee refusee
+OK - JWT signature falsifiee refuse
+OK - Enregistrement bagage par role autorise
+OK - Agent enregistrement sans mise a jour statut
+OK - Saut etape agent tri refuse
+OK - Cycle normal vers trie
+OK - Cycle normal vers charge
+OK - Cycle normal vers en_vol
+OK - Cycle normal vers livre
+OK - Repetition meme statut refusee
+OK - Historique complet : cinq evenements
+OK - Tracabilite : agent et date sur chaque evenement
+OK - Suivi public livre et cinq evenements
+OK - Suivi public sans identite, motif ou agent
+OK - Enregistrement bagage par role autorise
+OK - Declaration perdu depuis enregistre
+OK - Recuperation sans motif superviseur refusee
+OK - Recuperation motivee par superviseur
+OK - Anomalie conservee avec motif dans historique prive
+OK - Filtrage par vol et statut
+OK - Poids invalide refuse
+OK - Public refuse users avec JWT valide
+OK - Public refuse vols avec JWT valide
+OK - Public refuse bagages avec JWT valide
+OK - Public refuse auth/login avec JWT valide
+OK - Ecriture suivi public interdite
+OK - Tracking malforme retourne 404
+OK - Compte fictif de verrouillage cree
+OK - Echec connexion 1
+OK - Echec connexion 2
+OK - Echec connexion 3
+OK - Echec connexion 4
+OK - Echec connexion 5
+OK - Verrouillage refuse mot de passe correct
+OK - Limitation debit connexion

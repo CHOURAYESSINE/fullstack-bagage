@@ -1,0 +1,5 @@
+{
+  "readinessUrl": "http://127.0.0.1:18080/health/ready",
+  "environment": "Docker",
+  "trackingUrl": "http://127.0.0.1:18080/api/track/E47EE8EE0D2ABB2A1A01F840D3F05D202D3F2A941BEDD444"
+}

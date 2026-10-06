@@ -1,0 +1,88 @@
+name: fullstack-bagage
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: bagage
+      POSTGRES_USER: bagage_owner
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Configurer .env}
+      BAGAGE_APP_PASSWORD: ${BAGAGE_APP_PASSWORD:?Configurer .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/docker-init.sh:/docker-entrypoint-initdb.d/010-app-role.sh:ro
+      - ./database/002_runtime_permissions.sql:/setup/permissions.sql:ro
+    networks: [database]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U bagage_owner -d bagage']
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    # Aucun port PostgreSQL publié sur l'hôte.
+  api:
+    build:
+      context: .
+      dockerfile: back/Bagage.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_HTTP_PORTS: '8080'
+      ConnectionStrings__Bagage: Host=db;Database=bagage;Username=bagage_app;Password=${BAGAGE_APP_PASSWORD:?Configurer .env}
+      Jwt__Key: ${JWT_KEY:?Configurer .env}
+    ports: ['127.0.0.1:${API_PORT:-18080}:8080']
+    depends_on:
+      db: {condition: service_healthy}
+    networks: [application, database]
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, dotnet, Bagage.Api.dll, --healthcheck]
+      interval: 10s
+      timeout: 5s
+      start_period: 20s
+      retries: 6
+  public:
+    build:
+      context: ./front
+      dockerfile: public/Dockerfile
+    ports: ['127.0.0.1:14200:8080']
+    depends_on:
+      api: {condition: service_healthy}
+    networks: [application]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  agents:
+    build:
+      context: ./front
+      dockerfile: agents/Dockerfile
+    ports: ['127.0.0.1:14201:8080']
+    depends_on:
+      api: {condition: service_healthy}
+    networks: [application]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  migrate:
+    profiles: [tools]
+    build:
+      context: .
+      dockerfile: back/Bagage.Api/Dockerfile
+    environment:
+      ConnectionStrings__Bagage: Host=db;Database=bagage;Username=bagage_owner;Password=${POSTGRES_PASSWORD:?Configurer .env}
+      Jwt__Key: ${JWT_KEY:?Configurer .env}
+      Bootstrap__Login: ${BOOTSTRAP_LOGIN:-admin.local}
+      Bootstrap__Password: ${BOOTSTRAP_PASSWORD:?Configurer .env}
+    command: [--migrate]
+    depends_on:
+      db: {condition: service_healthy}
+    networks: [database]
+networks:
+  application: {}
+  database:
+    internal: true
+volumes:
+  postgres_data: {}
+

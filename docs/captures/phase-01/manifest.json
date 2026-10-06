@@ -1,0 +1,51 @@
+[
+  {
+    "fichier": "01-api-routes.jpg",
+    "octets": 75677,
+    "sha256": "308B3995DF362574D087419CD579957C926C1AA03D6201EF712083417A3D24B0",
+    "archiveUtc": "2026-10-01T00:11:24.6737583Z",
+    "source": "Capture navigateur de Swagger connecte a API locale"
+  },
+  {
+    "fichier": "02-postgresql-connecte.jpg",
+    "octets": 61196,
+    "sha256": "111A933FBECF0E9BAF5A5A3586E896FFA47FD6999B1B9AAFDEA2DCAAB7FDC817",
+    "archiveUtc": "2026-10-01T00:11:24.687153Z",
+    "source": "Capture navigateur de Swagger connecte a API locale"
+  },
+  {
+    "fichier": "03-acces-refuse-401.jpg",
+    "octets": 55292,
+    "sha256": "BC40565CF0CBD6F86C329A4DF264CED34FE6AD9495FAC8071B54BAD4BEA7ADD3",
+    "archiveUtc": "2026-10-01T00:11:24.6880661Z",
+    "source": "Capture navigateur de Swagger connecte a API locale"
+  },
+  {
+    "fichier": "04-tracking-public.jpg",
+    "octets": 65147,
+    "sha256": "8D448BC1006085ECC436B74883B7AD2F9DAD4331D40149CE8A5CC2A3603084F8",
+    "archiveUtc": "2026-10-01T00:11:24.6888743Z",
+    "source": "Capture navigateur de Swagger connecte a API locale"
+  },
+  {
+    "fichier": "05-docker-desktop.jpg",
+    "octets": 74265,
+    "sha256": "DDD0EBDF2EA8F01CC5F3723DBE7DA2AB221BDA06FCBD6B5FD579C79F90037010",
+    "archiveUtc": "2026-10-01T13:20:25.3284834Z",
+    "source": "Capture originale Windows Docker Desktop"
+  },
+  {
+    "fichier": "06-api-conteneur.jpg",
+    "octets": 36053,
+    "sha256": "B0611055DB1C2EDFA6531659FBF847AACA8F3E3C987833EFAC45BCF2411CE4D7",
+    "archiveUtc": "2026-10-01T13:20:25.3457177Z",
+    "source": "Capture originale Swagger API Docker sur 18080"
+  },
+  {
+    "fichier": "07-tracking-docker.jpg",
+    "octets": 38655,
+    "sha256": "05499B5064C16D296874E2D27C03D18F776231DF2EB25567653855DC291973AC",
+    "archiveUtc": "2026-10-01T13:20:25.3473112Z",
+    "source": "Capture originale Swagger API Docker sur 18080"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "dateUtc": "2026-10-02T08:31:45.648Z",
+  "client": "win32 / Node v24.19.0",
+  "checks": [
+    {
+      "test": "VPN Windows retabli : meme JWT accepte",
+      "resultat": "OK"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+VALIDATION VM REELLE - yessine-VMware-Virtual-Platform - Linux
+OK - Interface publique Angular joignable depuis la VM
+OK - Certificat public verifie et TLS moderne
+OK - Sans CA explicite : certificat refuse
+OK - Bagage Kubernetes suivi depuis la VM
+OK - Aucune identite personnelle dans le suivi
+OK - Proxy public refuse /api/users
+OK - Proxy public refuse /api/vols
+OK - Proxy public refuse /api/bagages
+OK - Proxy public refuse /api/auth/login
+OK - Port prive hote 8443 ferme depuis VM
+OK - Port prive hote 18080 ferme depuis VM
+OK - Port prive hote 14201 ferme depuis VM
+OK - HTTPS agents inaccessible sans VPN

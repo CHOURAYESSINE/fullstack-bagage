@@ -1,0 +1,14 @@
+VALIDATION RESEAU - OUTSIDE - 2026-10-01T23:22:03.039587+00:00
+OK - Meme JWT valide : API privee injoignable hors VPN
+OK - Frontend agents injoignable hors VPN, route forcee incluse
+OK - API directe privee inaccessible depuis edge
+OK - API directe cote public inaccessible depuis edge
+OK - HTTPS public disponible hors VPN
+OK - Proxy public refuse /api/users avec JWT valide
+OK - Proxy public refuse /api/vols avec JWT valide
+OK - Proxy public refuse /api/bagages avec JWT valide
+OK - Proxy public refuse /api/auth/login avec JWT valide
+OK - Suivi public conserve sans identite personnelle
+OK - Certificat public verifie et TLS moderne
+OK - CA non approuvee : verification TLS refusee normalement
+OK - PostgreSQL injoignable depuis le reseau externe simule

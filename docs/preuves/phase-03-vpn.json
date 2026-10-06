@@ -1,0 +1,37 @@
+{
+  "dateUtc": "2026-10-01T23:22:01.742657+00:00",
+  "checks": [
+    {
+      "test": "Interface agents HTTPS joignable par WireGuard",
+      "resultat": "OK"
+    },
+    {
+      "test": "Origine Angular limitee au VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion JWT a travers le tunnel chiffre",
+      "resultat": "OK"
+    },
+    {
+      "test": "JWT valide : liste comptes autorisee sur VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans JWT : API privee refusee en 401 meme sur VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat agents verifie avec CA locale et TLS moderne",
+      "resultat": "OK"
+    },
+    {
+      "test": "Handshake WireGuard non nul",
+      "resultat": "OK"
+    },
+    {
+      "test": "Octets WireGuard recus et emis",
+      "resultat": "OK"
+    }
+  ]
+}

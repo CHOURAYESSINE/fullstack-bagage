@@ -1,0 +1,9 @@
+#31 8.223                     | Initial total | 219.55 kB |                62.03 kB
+#31 8.223 Application bundle generation complete. [5.759 seconds] - 2026-10-01T13:42:16.221Z
+#31 8.225 Output location: /app/dist/public
+#30 9.858                     | Initial total |  12.44 kB |                 3.85 kB
+#30 9.858 Application bundle generation complete. [7.308 seconds] - 2026-10-01T13:42:17.856Z
+#30 9.861 Output location: /app/dist/agents
+#29 8.578                     | Initial total |  12.44 kB |                 3.85 kB
+#29 8.578 Application bundle generation complete. [6.220 seconds] - 2026-10-01T13:45:42.959Z
+#29 8.581 Output location: /app/dist/agents

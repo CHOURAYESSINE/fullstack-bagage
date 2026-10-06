@@ -1,0 +1,50 @@
+{
+  "dateUtc": "2026-10-02T08:49:37.825144+00:00",
+  "machine": "yessine-VMware-Virtual-Platform",
+  "systeme": "Linux",
+  "client": "VM reelle",
+  "jwtFourni": false,
+  "vpnActifDeclare": false,
+  "checks": [
+    {
+      "test": "Interface publique Angular joignable depuis la VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat public verifie et TLS moderne",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans CA explicite : certificat refuse",
+      "resultat": "OK"
+    },
+    {
+      "test": "Bagage Kubernetes suivi depuis la VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "Aucune identite personnelle dans le suivi",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/auth/login",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port prive hote 5432 ferme depuis VM",
+      "resultat": "ECHEC"
+    }
+  ]
+}

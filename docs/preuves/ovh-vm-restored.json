@@ -1,0 +1,30 @@
+{
+  "dateUtc": "2026-10-02T18:24:27.635430+00:00",
+  "perimetre": "VPS OVH distant reel ; client Docker sur PC Windows",
+  "checks": [
+    {
+      "test": "Site public HTTPS avec certificat reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "Meme JWT accepte apres retablissement du VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee auth/login",
+      "resultat": "OK"
+    }
+  ]
+}

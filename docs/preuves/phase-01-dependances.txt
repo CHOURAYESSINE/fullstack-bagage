@@ -1,0 +1,6 @@
+
+Les sources suivantes ont été utilisées :
+   https://api.nuget.org/v3/index.json
+   C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Le projet spécifié 'Bagage.Api' n'a aucun package vulnérable compte tenu des sources actuelles.

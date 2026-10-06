@@ -1,0 +1,40 @@
+Phase 01 - Tests HTTP reels
+Date UTC : 2026-10-01T00:01:31.1907629Z
+API : http://127.0.0.1:5080
+
+OK - API et PostgreSQL disponibles
+OK - Vols sans JWT : 401
+OK - Bagages sans JWT : 401
+OK - JWT falsifie : 401
+OK - Tracking inconnu : 404
+OK - Authentification administrateur
+OK - Creation compte Superviseur
+OK - Connexion Superviseur
+OK - Creation compte AgentEnregistrement
+OK - Connexion AgentEnregistrement
+OK - Creation compte AgentTri
+OK - Connexion AgentTri
+OK - Superviseur sans gestion des comptes : 403
+OK - Administrateur sans creation de vol : 403
+OK - Agent tri sans creation de vol : 403
+OK - Creation vol superviseur
+OK - Vol duplique : 409
+OK - Agent tri sans enregistrement : 403
+OK - Vol inexistant refuse : 400
+OK - Poids negatif refuse : 400
+OK - Enregistrement bagage
+OK - Enregistrement sans liste globale : 403
+OK - Filtrage des bagages
+OK - Saut de statut agent refuse : 409
+OK - Saut superviseur sans motif refuse : 409
+OK - Transition normale trie
+OK - Transition normale charge
+OK - Transition normale en_vol
+OK - Transition normale livre
+OK - Statut identique refuse : 409
+OK - Historique : 5 evenements avec agent et date
+OK - Tracking public sans authentification
+OK - Tracking sans donnees personnelles ou internes
+OK - Exception motivee superviseur tracee
+OK - Anomalie persistee dans historique
+OK - Declaration perdu depuis enregistre

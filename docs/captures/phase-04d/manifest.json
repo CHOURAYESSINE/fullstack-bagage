@@ -1,0 +1,17 @@
+[
+  {
+    "origine": "Capture directe VMware captureScreen ; sorties reellement executees dans la VM",
+    "sha256": "544426ab7468db06aeae869e61a2acce04b0546d24799d0726216eaf545f18cc",
+    "fichier": "01-demarrage-ubuntu.png"
+  },
+  {
+    "origine": "Capture directe VMware captureScreen ; sorties reellement executees dans la VM",
+    "sha256": "2c6a641ff274176bc418088dd5dd55b63ccf7dcfc3e85aeb33b4022b46ca1731",
+    "fichier": "02-validation-vm.png"
+  },
+  {
+    "origine": "Capture directe VMware captureScreen ; sorties reellement executees dans la VM",
+    "sha256": "e6d0ece738e9493568174f793a30e6a60005c15e6c5884fcfde8fbbae48f6751",
+    "fichier": "03-internet-vm.png"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "reseau": "NAT VMware VMnet8 192.168.233.0/24",
+  "adressePendantTest": "192.168.233.137",
+  "configurationVmOutilRestaureeParHash": true,
+  "nom": "Bagage - Client reseau externe Ubuntu 18.04",
+  "vCPU": 2,
+  "premierDemarrageValide": true,
+  "disqueNouveau": true,
+  "vmx": "C:\\Users\\User\\Desktop\\fullstack-bagage\\work\\phase-04\\vm-externe\\bagage-externe.vmx",
+  "ramMo": 2048,
+  "dateUtc": "2026-10-02T10:53:53.5415642Z",
+  "installationValidee": true,
+  "tailleVirtuelleGo": 20,
+  "sourceIso": "F:\\ubuntu-18.04.1-desktop-amd64.iso",
+  "clientInternetPhysiquementDistant": false,
+  "etatFinal": "arretee proprement",
+  "kernel": "5.4.0-150-generic"
+}

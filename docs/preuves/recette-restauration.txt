@@ -1,0 +1,10 @@
+OK - Sauvegarde PostgreSQL au format custom produite
+OK - Restauration dans une base temporaire independante
+OK - Table roles : nombre et empreinte des donnees identiques
+OK - Table users : nombre et empreinte des donnees identiques
+OK - Table vols : nombre et empreinte des donnees identiques
+OK - Table bagages : nombre et empreinte des donnees identiques
+OK - Table historique_statuts : nombre et empreinte des donnees identiques
+OK - Droits applicatifs de historique restaures : lecture/ajout, sans modification/suppression
+OK - Aucun historique orphelin apres restauration
+OK - Base temporaire supprimee ; base active conservee

@@ -1,0 +1,18 @@
+{
+  "dateLocale": "2026-10-02",
+  "fuseau": "Africa/Lagos",
+  "captures": [
+    {
+      "fichier": "01-suivi-internet.jpg",
+      "sha256": "811505430C344A0FA635E26A000624F5B6DB3C78F03357893FCECECB6EFEFF50",
+      "octets": 24408,
+      "origine": "Capture originale navigateur Internet"
+    },
+    {
+      "fichier": "02-restauration-postgresql.jpg",
+      "sha256": "B0BE614C96D5A91E8F5A5F741023C19B2DF81E120C78948E54A7C1FDE1B2BE67",
+      "octets": 132685,
+      "origine": "Capture originale Docker Desktop des resultats PostgreSQL"
+    }
+  ]
+}

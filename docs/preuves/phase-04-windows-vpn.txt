@@ -1,0 +1,4 @@
+OK - Interface agents accessible par VPN Windows
+OK - Authentification depuis Windows dans le tunnel
+OK - JWT valide accepte sur VPN Windows
+OK - Sans JWT : refus 401 meme sur VPN Windows

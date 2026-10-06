@@ -1,0 +1,3 @@
+OK - Etiquette public autorisee : API repond 200.
+OK - Meme pod sans autorisation : API bloquee par NetworkPolicy.
+OK - Etiquette retablie : API repond de nouveau 200.

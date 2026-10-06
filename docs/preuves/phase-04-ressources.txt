@@ -1,0 +1,31 @@
+NAME                          READY   STATUS        RESTARTS      AGE   IP           NODE                  NOMINATED NODE   READINESS GATES
+pod/agents-77cb94c946-m8xst   1/1     Running       2 (85m ago)   9h    10.42.0.31   k3d-bagage-server-0   <none>           <none>
+pod/api-c8fbbd588-4nbrl       1/1     Running       2 (85m ago)   9h    10.42.0.30   k3d-bagage-server-0   <none>           <none>
+pod/bootstrap-49ghf           0/1     Completed     0             9h    <none>       k3d-bagage-server-0   <none>           <none>
+pod/db-0                      1/1     Running       0             18s   10.42.0.34   k3d-bagage-server-0   <none>           <none>
+pod/migrate-m6sxg             0/1     Completed     0             9h    <none>       k3d-bagage-server-0   <none>           <none>
+pod/policy-probe              1/1     Terminating   0             29s   10.42.0.33   k3d-bagage-server-0   <none>           <none>
+pod/public-69c959b4bb-qmrgj   1/1     Running       3 (85m ago)   9h    10.42.0.29   k3d-bagage-server-0   <none>           <none>
+
+NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE   SELECTOR
+service/agents      ClusterIP   10.43.157.93    <none>        8443/TCP          9h    app=agents
+service/api         ClusterIP   10.43.207.180   <none>        8080/TCP          9h    app=api
+service/db          ClusterIP   10.43.107.124   <none>        5432/TCP          9h    app=db
+service/public      NodePort    10.43.206.162   <none>        8443:31443/TCP    9h    app=public
+service/wireguard   NodePort    10.43.207.156   <none>        51820:31820/UDP   9h    app=agents
+
+NAME                              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+persistentvolumeclaim/data-db-0   Bound    pvc-aae1a3a5-4928-471e-a87d-b61b3b418e7e   2Gi        RWO            local-path     <unset>                 9h    Filesystem
+
+NAME                                                               POD-SELECTOR    AGE
+networkpolicy.networking.k8s.io/agents-to-api                      app=agents      9h
+networkpolicy.networking.k8s.io/api-from-proxies                   app=api         9h
+networkpolicy.networking.k8s.io/api-to-db                          app=api         9h
+networkpolicy.networking.k8s.io/bootstrap-to-db                    app=bootstrap   9h
+networkpolicy.networking.k8s.io/database-from-api-and-migrations   app=db          9h
+networkpolicy.networking.k8s.io/deny-by-default                    <none>          9h
+networkpolicy.networking.k8s.io/dns                                <none>          9h
+networkpolicy.networking.k8s.io/migrate-to-db                      app=migrate     9h
+networkpolicy.networking.k8s.io/public-https                       app=public      9h
+networkpolicy.networking.k8s.io/public-to-api                      app=public      9h
+networkpolicy.networking.k8s.io/vpn-udp                            app=agents      9h

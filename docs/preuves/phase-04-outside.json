@@ -1,0 +1,57 @@
+{
+  "dateUtc": "2026-10-02T09:37:00.441663+00:00",
+  "checks": [
+    {
+      "test": "Meme JWT : API agents inaccessible sans tunnel",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pod agents inaccessible directement sur HTTPS",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pod API inaccessible directement avec JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "Service ClusterIP API inaccessible avec JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "PostgreSQL inaccessible depuis le client externe",
+      "resultat": "OK"
+    },
+    {
+      "test": "Frontend public accessible en HTTPS sans VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/users meme avec JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/vols meme avec JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/bagages meme avec JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/auth/login meme avec JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public reel : statut trie et historique conserves",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public sans identite du passager",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat public verifie avec la CA du cluster",
+      "resultat": "OK"
+    }
+  ]
+}

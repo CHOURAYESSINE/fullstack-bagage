@@ -1,0 +1,4 @@
+OK - Service api en ClusterIP sans IP externe.
+OK - Service agents en ClusterIP sans IP externe.
+OK - Service db en ClusterIP sans IP externe.
+OK - Chiffrement au repos des Secrets k3s actif.

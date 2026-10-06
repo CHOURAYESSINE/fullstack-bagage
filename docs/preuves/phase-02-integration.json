@@ -1,0 +1,134 @@
+[
+  {
+    "test": "public : healthy, non-root, lecture seule",
+    "resultat": "OK"
+  },
+  {
+    "test": "agents : healthy, non-root, lecture seule",
+    "resultat": "OK"
+  },
+  {
+    "test": "Interface publique accessible",
+    "resultat": "OK"
+  },
+  {
+    "test": "CSP et absence de mise en cache",
+    "resultat": "OK"
+  },
+  {
+    "test": "Interface agents accessible localement",
+    "resultat": "OK"
+  },
+  {
+    "test": "Route Angular profonde disponible",
+    "resultat": "OK"
+  },
+  {
+    "test": "Hote agents non autorise refuse par Nginx",
+    "resultat": "OK"
+  },
+  {
+    "test": "Origines agents explicitement limitees",
+    "resultat": "OK"
+  },
+  {
+    "test": "API agents sans JWT refusee",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion administrateur via proxy agents",
+    "resultat": "OK"
+  },
+  {
+    "test": "Proxy public interdit /api/auth/login avec JWT valide",
+    "resultat": "OK"
+  },
+  {
+    "test": "Proxy public interdit /api/users avec JWT valide",
+    "resultat": "OK"
+  },
+  {
+    "test": "Proxy public interdit /api/vols avec JWT valide",
+    "resultat": "OK"
+  },
+  {
+    "test": "Proxy public interdit /api/bagages avec JWT valide",
+    "resultat": "OK"
+  },
+  {
+    "test": "Compte fictif Superviseur cree",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion Superviseur via proxy",
+    "resultat": "OK"
+  },
+  {
+    "test": "Compte fictif AgentEnregistrement cree",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion AgentEnregistrement via proxy",
+    "resultat": "OK"
+  },
+  {
+    "test": "Compte fictif AgentTri cree",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion AgentTri via proxy",
+    "resultat": "OK"
+  },
+  {
+    "test": "Compte fictif Administrateur cree",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion Administrateur via proxy",
+    "resultat": "OK"
+  },
+  {
+    "test": "Creation vol par superviseur via interface agents",
+    "resultat": "OK"
+  },
+  {
+    "test": "Enregistrement via proxy avec role autorise",
+    "resultat": "OK"
+  },
+  {
+    "test": "Agent tri sans droit de creation de vol",
+    "resultat": "OK"
+  },
+  {
+    "test": "Administrateur sans permission metier",
+    "resultat": "OK"
+  },
+  {
+    "test": "Agent enregistrement sans liste globale",
+    "resultat": "OK"
+  },
+  {
+    "test": "Superviseur sans gestion des comptes",
+    "resultat": "OK"
+  },
+  {
+    "test": "Tri vers etape normale accepte",
+    "resultat": "OK"
+  },
+  {
+    "test": "Saut etape sans superviseur refuse",
+    "resultat": "OK"
+  },
+  {
+    "test": "Suivi public relie a PostgreSQL",
+    "resultat": "OK"
+  },
+  {
+    "test": "Suivi sans identite ni identifiant interne",
+    "resultat": "OK"
+  },
+  {
+    "test": "Modification interdite par le proxy public",
+    "resultat": "OK"
+  }
+]

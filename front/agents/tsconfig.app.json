@@ -1,0 +1,13 @@
+{
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "files": [
+    "src/main.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "../out-tsc/agents",
+    "types": []
+  },
+  "extends": "../tsconfig.json"
+}

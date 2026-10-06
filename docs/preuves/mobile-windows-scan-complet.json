@@ -1,0 +1,28 @@
+{
+  "dateUtc": "2026-10-02T12:19:26.239927+00:00",
+  "client": "Windows socket lie a interface USB mobile",
+  "sortieMobileVerifiee": true,
+  "adressesPubliquesMasquees": true,
+  "checks": [
+    {
+      "port": 80,
+      "resultat": "ECHEC",
+      "test": "Port inaccessible via Internet mobile"
+    },
+    {
+      "port": 5432,
+      "resultat": "OK",
+      "test": "Port inaccessible via Internet mobile"
+    },
+    {
+      "port": 8080,
+      "resultat": "OK",
+      "test": "Port inaccessible via Internet mobile"
+    },
+    {
+      "port": 5005,
+      "resultat": "OK",
+      "test": "Port inaccessible via Internet mobile"
+    }
+  ]
+}

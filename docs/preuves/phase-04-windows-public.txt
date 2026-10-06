@@ -1,0 +1,10 @@
+OK - HTTPS public natif Windows : interface Angular disponible
+OK - Certificat et nom verifies avec CA explicite
+OK - Negociation TLS moderne depuis Windows
+OK - Sans CA locale : certificat refuse normalement
+OK - Suivi reel depuis Windows : trie et deux evenements
+OK - Suivi sans identite personnelle
+OK - Proxy public refuse la connexion privee
+OK - Ancien port HTTP 18080 ferme sur Windows
+OK - Ancien port HTTP 14200 ferme sur Windows
+OK - Ancien port HTTP 14201 ferme sur Windows

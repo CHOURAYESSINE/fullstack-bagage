@@ -1,0 +1,33 @@
+ compte_application 
+--------------------
+ bagage_app
+(1 row)
+
+  rolname   | rolsuper | rolcreatedb | rolcreaterole 
+------------+----------+-------------+---------------
+ bagage_app | f        | f           | f
+(1 row)
+
+ lecture_historique | ajout_historique | modification_historique | suppression_historique | creation_tables 
+--------------------+------------------+-------------------------+------------------------+-----------------
+ t                  | t                | f                       | f                      | f
+(1 row)
+
+ mots_de_passe_au_format_identity 
+----------------------------------
+                                4
+(1 row)
+
+ NouveauStatut | Anomalie |          Horodatage           
+---------------+----------+-------------------------------
+ enregistre    | f        | 2026-10-01 01:01:30.755894+01
+ trie          | f        | 2026-10-01 01:01:30.972281+01
+ charge        | f        | 2026-10-01 01:01:31.000443+01
+ en_vol        | f        | 2026-10-01 01:01:31.010863+01
+ livre         | f        | 2026-10-01 01:01:31.020445+01
+ enregistre    | f        | 2026-10-01 01:01:31.109408+01
+ livre         | t        | 2026-10-01 01:01:31.129635+01
+ enregistre    | f        | 2026-10-01 01:01:31.153518+01
+ perdu         | f        | 2026-10-01 01:01:31.163925+01
+(9 rows)
+

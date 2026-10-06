@@ -1,0 +1,36 @@
+{
+  "dateUtc": "2026-10-02T10:48:12.205154+00:00",
+  "client": "bagage-externe",
+  "url": "https://die-actions-schools-jump.trycloudflare.com",
+  "portee": "HTTPS public via Internet ; VM sur meme hote physique",
+  "checks": [
+    {
+      "test": "Interface Angular Internet avec certificat systeme verifie",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi reel Kubernetes via Internet",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi Internet sans identite personnelle",
+      "resultat": "OK"
+    },
+    {
+      "test": "Internet : route privee refusee users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Internet : route privee refusee vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Internet : route privee refusee bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Internet : route privee refusee auth/login",
+      "resultat": "OK"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Parcours navigateur - 10/01/2026 13:49:35
+OK - Styles globaux chargés avec la CSP active
+OK - Code de suivi mal formé refusé dans le formulaire
+OK - Suivi public Angular : statut trié et deux étapes de PostgreSQL
+OK - Route /bagages sans session redirigée vers /connexion
+OK - Connexion superviseur : données réelles et menu sans gestion des comptes
+OK - Filtre de vol Angular : un bagage de démonstration retrouvé
+OK - Correction superviseur enregistrée depuis Angular avec motif et anomalie visibles
+OK - Vol créé depuis le formulaire Angular et visible dans la liste
+OK - Agent enregistrement : menus limités à enregistrement et vols
+OK - Bagage créé depuis Angular : reçu de suivi et historique réel
+OK - Déconnexion corrigée : retour connexion et retrait de la console
+OK - Agent tri : ni création de bagage ni gestion des comptes dans les menus
+OK - Agent tri : uniquement Trié ou Perdu depuis Enregistré, aucun motif superviseur
+OK - Transition normale enregistrée depuis le navigateur par AgentTri
+OK - Administrateur : accès comptes uniquement, aucun menu métier
+OK - Création compte depuis Angular : liste mise à jour et mot de passe effacé
+OK - Rendu étroit : page sans débordement global, tableau défilable
+OK - Rechargement de page : session en mémoire supprimée et connexion requise
+OK - Origine localhost. non autorisée : module agents non chargé, refus affiché
+OK - Code valide mais inconnu : erreur 404 lisible, ancien résultat retiré
+OK - Parcours UI complet : vol, enregistrement, tri puis suivi public cohérent

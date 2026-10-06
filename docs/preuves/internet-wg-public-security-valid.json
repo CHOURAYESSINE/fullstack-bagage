@@ -1,0 +1,43 @@
+{
+  "dateUtc": "2026-10-02T12:31:32.565520+00:00",
+  "mode": "valid",
+  "portee": "UDP alloue au projet et URL HTTPS du projet ; aucun scan autres ports fournisseur",
+  "checks": [
+    {
+      "test": "VPN Internet valide : faux JWT refuse",
+      "resultat": "OK"
+    },
+    {
+      "test": "Endpoint WireGuard : adresse publique du relais alloue",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pair autorise : handshake Internet recent",
+      "resultat": "OK"
+    },
+    {
+      "test": "WireGuard Internet : octets recus et envoyes",
+      "resultat": "OK"
+    },
+    {
+      "test": "Scan HTTPS public : refus /api/users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Scan HTTPS public : refus /api/vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Scan HTTPS public : refus /api/bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Scan HTTPS public : refus /api/auth/login",
+      "resultat": "OK"
+    },
+    {
+      "test": "Scan HTTPS public : Swagger API non publie",
+      "resultat": "OK"
+    }
+  ]
+}

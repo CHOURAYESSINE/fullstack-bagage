@@ -1,0 +1,146 @@
+[
+  {
+    "test": "API et PostgreSQL disponibles",
+    "resultat": "OK"
+  },
+  {
+    "test": "Vols sans JWT : 401",
+    "resultat": "OK"
+  },
+  {
+    "test": "Bagages sans JWT : 401",
+    "resultat": "OK"
+  },
+  {
+    "test": "JWT falsifie : 401",
+    "resultat": "OK"
+  },
+  {
+    "test": "Tracking inconnu : 404",
+    "resultat": "OK"
+  },
+  {
+    "test": "Authentification administrateur",
+    "resultat": "OK"
+  },
+  {
+    "test": "Creation compte Superviseur",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion Superviseur",
+    "resultat": "OK"
+  },
+  {
+    "test": "Creation compte AgentEnregistrement",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion AgentEnregistrement",
+    "resultat": "OK"
+  },
+  {
+    "test": "Creation compte AgentTri",
+    "resultat": "OK"
+  },
+  {
+    "test": "Connexion AgentTri",
+    "resultat": "OK"
+  },
+  {
+    "test": "Superviseur sans gestion des comptes : 403",
+    "resultat": "OK"
+  },
+  {
+    "test": "Administrateur sans creation de vol : 403",
+    "resultat": "OK"
+  },
+  {
+    "test": "Agent tri sans creation de vol : 403",
+    "resultat": "OK"
+  },
+  {
+    "test": "Creation vol superviseur",
+    "resultat": "OK"
+  },
+  {
+    "test": "Vol duplique : 409",
+    "resultat": "OK"
+  },
+  {
+    "test": "Agent tri sans enregistrement : 403",
+    "resultat": "OK"
+  },
+  {
+    "test": "Vol inexistant refuse : 400",
+    "resultat": "OK"
+  },
+  {
+    "test": "Poids negatif refuse : 400",
+    "resultat": "OK"
+  },
+  {
+    "test": "Enregistrement bagage",
+    "resultat": "OK"
+  },
+  {
+    "test": "Enregistrement sans liste globale : 403",
+    "resultat": "OK"
+  },
+  {
+    "test": "Filtrage des bagages",
+    "resultat": "OK"
+  },
+  {
+    "test": "Saut de statut agent refuse : 409",
+    "resultat": "OK"
+  },
+  {
+    "test": "Saut superviseur sans motif refuse : 409",
+    "resultat": "OK"
+  },
+  {
+    "test": "Transition normale trie",
+    "resultat": "OK"
+  },
+  {
+    "test": "Transition normale charge",
+    "resultat": "OK"
+  },
+  {
+    "test": "Transition normale en_vol",
+    "resultat": "OK"
+  },
+  {
+    "test": "Transition normale livre",
+    "resultat": "OK"
+  },
+  {
+    "test": "Statut identique refuse : 409",
+    "resultat": "OK"
+  },
+  {
+    "test": "Historique : 5 evenements avec agent et date",
+    "resultat": "OK"
+  },
+  {
+    "test": "Tracking public sans authentification",
+    "resultat": "OK"
+  },
+  {
+    "test": "Tracking sans donnees personnelles ou internes",
+    "resultat": "OK"
+  },
+  {
+    "test": "Exception motivee superviseur tracee",
+    "resultat": "OK"
+  },
+  {
+    "test": "Anomalie persistee dans historique",
+    "resultat": "OK"
+  },
+  {
+    "test": "Declaration perdu depuis enregistre",
+    "resultat": "OK"
+  }
+]

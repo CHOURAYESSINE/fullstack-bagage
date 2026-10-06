@@ -1,0 +1,202 @@
+{
+  "dateUtc": "2026-10-02T18:22:39.818832+00:00",
+  "perimetre": "VPS OVH via WireGuard Internet direct depuis Docker Windows",
+  "checks": [
+    {
+      "test": "Connexion administrateur initial",
+      "resultat": "OK"
+    },
+    {
+      "test": "Creation compte fictif Superviseur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion Superviseur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Creation compte fictif AgentEnregistrement",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion AgentEnregistrement",
+      "resultat": "OK"
+    },
+    {
+      "test": "Creation compte fictif AgentTri",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion AgentTri",
+      "resultat": "OK"
+    },
+    {
+      "test": "Creation compte fictif Administrateur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion Administrateur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Superviseur cree vol",
+      "resultat": "OK"
+    },
+    {
+      "test": "Agent tri ne cree pas de vol",
+      "resultat": "OK"
+    },
+    {
+      "test": "Administrateur sans droits metier",
+      "resultat": "OK"
+    },
+    {
+      "test": "Superviseur sans gestion des comptes",
+      "resultat": "OK"
+    },
+    {
+      "test": "Agent enregistrement sans liste globale",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans JWT : API privee refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "JWT signature falsifiee refuse",
+      "resultat": "OK"
+    },
+    {
+      "test": "Enregistrement bagage par role autorise",
+      "resultat": "OK"
+    },
+    {
+      "test": "Agent enregistrement sans mise a jour statut",
+      "resultat": "OK"
+    },
+    {
+      "test": "Saut etape agent tri refuse",
+      "resultat": "OK"
+    },
+    {
+      "test": "Cycle normal vers trie",
+      "resultat": "OK"
+    },
+    {
+      "test": "Cycle normal vers charge",
+      "resultat": "OK"
+    },
+    {
+      "test": "Cycle normal vers en_vol",
+      "resultat": "OK"
+    },
+    {
+      "test": "Cycle normal vers livre",
+      "resultat": "OK"
+    },
+    {
+      "test": "Repetition meme statut refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "Historique complet : cinq evenements",
+      "resultat": "OK"
+    },
+    {
+      "test": "Tracabilite : agent et date sur chaque evenement",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public livre et cinq evenements",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public sans identite, motif ou agent",
+      "resultat": "OK"
+    },
+    {
+      "test": "Enregistrement bagage par role autorise",
+      "resultat": "OK"
+    },
+    {
+      "test": "Declaration perdu depuis enregistre",
+      "resultat": "OK"
+    },
+    {
+      "test": "Recuperation sans motif superviseur refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "Recuperation motivee par superviseur",
+      "resultat": "OK"
+    },
+    {
+      "test": "Anomalie conservee avec motif dans historique prive",
+      "resultat": "OK"
+    },
+    {
+      "test": "Filtrage par vol et statut",
+      "resultat": "OK"
+    },
+    {
+      "test": "Poids invalide refuse",
+      "resultat": "OK"
+    },
+    {
+      "test": "Public refuse users avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Public refuse vols avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Public refuse bagages avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Public refuse auth/login avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Ecriture suivi public interdite",
+      "resultat": "OK"
+    },
+    {
+      "test": "Tracking malforme retourne 404",
+      "resultat": "OK"
+    },
+    {
+      "test": "Compte fictif de verrouillage cree",
+      "resultat": "OK"
+    },
+    {
+      "test": "Echec connexion 1",
+      "resultat": "OK"
+    },
+    {
+      "test": "Echec connexion 2",
+      "resultat": "OK"
+    },
+    {
+      "test": "Echec connexion 3",
+      "resultat": "OK"
+    },
+    {
+      "test": "Echec connexion 4",
+      "resultat": "OK"
+    },
+    {
+      "test": "Echec connexion 5",
+      "resultat": "OK"
+    },
+    {
+      "test": "Verrouillage refuse mot de passe correct",
+      "resultat": "OK"
+    },
+    {
+      "test": "Limitation debit connexion",
+      "resultat": "OK"
+    }
+  ]
+}

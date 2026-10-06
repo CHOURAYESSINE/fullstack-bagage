@@ -1,0 +1,28 @@
+{
+  "dateUtc": "2026-10-02T12:01:00.550119+00:00",
+  "source": "bagage-externe",
+  "destination": "192.168.1.123",
+  "portee": "IPv4 depuis NAT VMware, pas scan Internet distant",
+  "checks": [
+    {
+      "port": 80,
+      "test": "Port partage inaccessible depuis VM",
+      "resultat": "OK"
+    },
+    {
+      "port": 5432,
+      "test": "Port partage inaccessible depuis VM",
+      "resultat": "OK"
+    },
+    {
+      "port": 8080,
+      "test": "Port partage inaccessible depuis VM",
+      "resultat": "OK"
+    },
+    {
+      "port": 5005,
+      "test": "Port partage inaccessible depuis VM",
+      "resultat": "OK"
+    }
+  ]
+}

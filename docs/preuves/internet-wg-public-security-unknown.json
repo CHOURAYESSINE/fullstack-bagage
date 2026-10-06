@@ -1,0 +1,15 @@
+{
+  "dateUtc": "2026-10-02T12:31:25.866139+00:00",
+  "mode": "unknown",
+  "portee": "UDP alloue au projet et URL HTTPS du projet ; aucun scan autres ports fournisseur",
+  "checks": [
+    {
+      "test": "Pair WireGuard inconnu : aucun handshake Internet",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pair inconnu : HTTPS prive inaccessible",
+      "resultat": "OK"
+    }
+  ]
+}

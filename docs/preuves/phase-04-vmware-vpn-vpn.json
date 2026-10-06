@@ -1,0 +1,22 @@
+{
+  "client": "VMware Ubuntu reelle",
+  "mode": "vpn",
+  "checks": [
+    {
+      "test": "VM : interface agents accessible avec TLS verifie",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM : authentification dans le tunnel",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM : JWT accepte sur API privee",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM : sans JWT acces prive refuse",
+      "resultat": "OK"
+    }
+  ]
+}

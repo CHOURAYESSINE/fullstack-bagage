@@ -1,0 +1,9 @@
+  Bagage.Api -> C:\Users\User\Desktop\fullstack-bagage\back\Bagage.Api\bin\Debug\net8.0\Bagage.Api.dll
+
+La génération a réussi.
+    0 Avertissement(s)
+    0 Erreur(s)
+
+Temps écoulé 00:00:01.64
+
+Des mises à jour de la charge de travail sont disponibles. Exécutez `dotnet workload list` pour plus d’informations.

@@ -1,0 +1,13 @@
+{
+  "dateUtc": "2026-10-02T09:37:34.772325+00:00",
+  "checks": [
+    {
+      "test": "Suivi public reel : statut trie et historique conserves",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public sans identite du passager",
+      "resultat": "OK"
+    }
+  ]
+}

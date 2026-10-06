@@ -1,0 +1,26 @@
+{
+  "dateUtc": "2026-10-02T12:39:56.9159347Z",
+  "phase": "4 - recette finale et cloture demonstration",
+  "baselineKubernetesWindowsVmware": 108,
+  "nouveauxControlesEtObservations": {
+    "recette-metier": 49,
+    "recette-infrastructure": 27,
+    "recette-internet": 9,
+    "recette-internet-navigateur": 3,
+    "recette-restauration": 10,
+    "journalisation": 2,
+    "audits-dependances": 2,
+    "nouvelle-vm-ubuntu": 32,
+    "fermeture-ports-lan": 4,
+    "seconde-vm-vpn-local": 12,
+    "internet-wireguard-relais": 23
+  },
+  "totalPhase4EtRecette": 281,
+  "rejeuKubernetesCompteUneSeuleFois": true,
+  "limites": [
+    "Trajet UDP direct domestique et fermeture globale WAN non valides ; repondants TCP 80/8080 non identifies",
+    "Validation Internet reussie via relais temporaires, pas infrastructure permanente",
+    "Restauration logique sur le meme serveur ; pas reprise apres perte du noeud"
+  ],
+  "tunnelInternetTemporaireArrete": true
+}

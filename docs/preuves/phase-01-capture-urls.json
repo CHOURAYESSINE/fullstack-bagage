@@ -1,0 +1,4 @@
+{
+  "trackingUrl": "http://127.0.0.1:5080/api/track/0DA496AA8CB8C9B676C565DD65484351A9AC5EDD14BBF919",
+  "readinessUrl": "http://127.0.0.1:5080/health/ready"
+}

@@ -1,0 +1,13 @@
+{
+  "dateLocale": "2026-10-02",
+  "internet": "Non teste",
+  "jwtTemporaireSupprime": true,
+  "tunnelApresTests": "Stopped",
+  "windowsNatifControlesReussis": 24,
+  "wireguardInstalle": true,
+  "vm": "VMware Ubuntu : tests reussis, VM arretee proprement, reseau pvn retabli",
+  "totalKubernetesEtWindows": 83,
+  "vmwareControlesReussis": 25,
+  "totalKubernetesWindowsVmware": 108,
+  "limitePortsHote": "5432 PostgreSQL Windows et 8080 training_pfe exposes ; fermeture globale non validee"
+}

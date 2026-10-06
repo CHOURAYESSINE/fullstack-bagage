@@ -1,0 +1,4 @@
+Phase 1 Docker validée le 1er octobre 2026.
+Docker Desktop 4.93.0 ; Engine 29.8.1 ; API locale sur 18080.
+39 tests fonctionnels, 9 sécurité, 14 infrastructure et 2 persistance réussis.
+Voir phase-01-docker-*.txt et ../phases/01b-validation-docker.md.

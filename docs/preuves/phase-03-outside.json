@@ -1,0 +1,57 @@
+{
+  "dateUtc": "2026-10-01T23:22:23.183378+00:00",
+  "checks": [
+    {
+      "test": "Meme JWT valide : API privee injoignable hors VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Frontend agents injoignable hors VPN, route forcee incluse",
+      "resultat": "OK"
+    },
+    {
+      "test": "API directe privee inaccessible depuis edge",
+      "resultat": "OK"
+    },
+    {
+      "test": "API directe cote public inaccessible depuis edge",
+      "resultat": "OK"
+    },
+    {
+      "test": "HTTPS public disponible hors VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/users avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/vols avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/bagages avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/auth/login avec JWT valide",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public conserve sans identite personnelle",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat public verifie et TLS moderne",
+      "resultat": "OK"
+    },
+    {
+      "test": "CA non approuvee : verification TLS refusee normalement",
+      "resultat": "OK"
+    },
+    {
+      "test": "PostgreSQL injoignable depuis le reseau externe simule",
+      "resultat": "OK"
+    }
+  ]
+}

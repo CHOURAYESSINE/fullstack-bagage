@@ -1,0 +1,3 @@
+OK - api : aucun port publie sur Windows.
+OK - agents : aucun port publie sur Windows.
+OK - db : aucun port publie sur Windows.

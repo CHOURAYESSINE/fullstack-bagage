@@ -1,0 +1,30 @@
+{
+  "client": "VMware Ubuntu reelle",
+  "mode": "off",
+  "checks": [
+    {
+      "test": "VM : meme JWT inaccessible apres coupure VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM sans VPN : / avec meme JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM sans VPN : /api/users avec meme JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM sans VPN : /api/vols avec meme JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM sans VPN : /api/bagages avec meme JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "VM sans VPN : /api/auth/login avec meme JWT",
+      "resultat": "OK"
+    }
+  ]
+}

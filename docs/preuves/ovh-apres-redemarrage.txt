@@ -1,0 +1,6 @@
+NAME                      READY   STATUS    RESTARTS   AGE
+agents-77cb94c946-tj8qw   1/1     Running   0          107s
+api-c8fbbd588-kkps4       1/1     Running   0          107s
+db-0                      1/1     Running   0          106s
+public-7884dc6cc6-rpc45   1/1     Running   0          107s
+3

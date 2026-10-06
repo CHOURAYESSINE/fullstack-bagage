@@ -1,0 +1,72 @@
+[
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-04d\\01-demarrage-ubuntu.png",
+    "rectanglePixels": [
+      0,
+      7,
+      315,
+      76
+    ],
+    "originalConserve": true
+  },
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-04d\\02-validation-vm.png",
+    "rectanglePixels": [
+      0,
+      0,
+      555,
+      476
+    ],
+    "originalConserve": true
+  },
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-04d\\03-internet-vm.png",
+    "rectanglePixels": [
+      0,
+      0,
+      643,
+      300
+    ],
+    "originalConserve": true
+  },
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-04e\\02-ports-et-vpn-local.png",
+    "rectanglePixels": [
+      0,
+      0,
+      467,
+      363
+    ],
+    "originalConserve": true
+  },
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-04f\\01-wireguard-internet.png",
+    "rectanglePixels": [
+      0,
+      0,
+      513,
+      316
+    ],
+    "originalConserve": true
+  },
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-04f\\02-controles-internet.png",
+    "rectanglePixels": [
+      0,
+      0,
+      521,
+      316
+    ],
+    "originalConserve": true
+  },
+  {
+    "fichier": "rapport\\..\\docs\\captures\\phase-05\\03-scan-internet-vm.png",
+    "rectanglePixels": [
+      0,
+      0,
+      444,
+      252
+    ],
+    "originalConserve": true
+  }
+]

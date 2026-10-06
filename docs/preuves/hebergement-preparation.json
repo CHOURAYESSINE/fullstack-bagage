@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-02T13:52:12.9292093+01:00",
+  "phase": "05",
+  "statut": "preparation_cloud_acces_attendu",
+  "choix": "gratuit_avec_compte",
+  "serveurCloudCree": false,
+  "validationCloudExecutee": false,
+  "observationLocale": "agents, api, db, public : 1/1 Running ; api, agents et db en ClusterIP",
+  "controlesPrecedents": 281
+}

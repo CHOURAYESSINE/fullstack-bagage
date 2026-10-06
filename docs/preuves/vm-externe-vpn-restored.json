@@ -1,0 +1,10 @@
+{
+  "client": "VMware Ubuntu reelle",
+  "mode": "restored",
+  "checks": [
+    {
+      "test": "VM : meme JWT accepte apres retablissement",
+      "resultat": "OK"
+    }
+  ]
+}

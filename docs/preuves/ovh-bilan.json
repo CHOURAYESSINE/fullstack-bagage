@@ -1,0 +1,69 @@
+{
+  "dateUtc": "2026-10-02T18:57:42.077271+00:00",
+  "url": "https://vps-8e16b3fe.vps.ovh.net",
+  "etat": "Valide pour la soutenance",
+  "groupes": [
+    {
+      "preuve": "ovh-metier.json",
+      "controlesReussis": 49
+    },
+    {
+      "preuve": "ovh-internet-vpn.json",
+      "controlesReussis": 11
+    },
+    {
+      "preuve": "ovh-internet-off.json",
+      "controlesReussis": 15
+    },
+    {
+      "preuve": "ovh-internet-restored.json",
+      "controlesReussis": 6
+    },
+    {
+      "preuve": "ovh-internet-unknown.json",
+      "controlesReussis": 7
+    },
+    {
+      "preuve": "ovh-vm-vpn.json",
+      "controlesReussis": 11
+    },
+    {
+      "preuve": "ovh-vm-off.json",
+      "controlesReussis": 15
+    },
+    {
+      "preuve": "ovh-vm-restored.json",
+      "controlesReussis": 6
+    },
+    {
+      "preuve": "ovh-infrastructure.json",
+      "controlesReussis": 26
+    },
+    {
+      "preuve": "ovh-windows.json",
+      "controlesReussis": 5
+    },
+    {
+      "preuve": "ovh-ipv6.json",
+      "controlesReussis": 13
+    },
+    {
+      "preuve": "ovh-restauration.txt",
+      "controlesReussis": 10
+    }
+  ],
+  "controlesOvh": 174,
+  "observationsLaboratoireAnterieures": 281,
+  "total": 455,
+  "capturesReelles": 38,
+  "diagnosticsExclus": [
+    "ovh-inconnu-diagnostic.json",
+    "ovh-ipv6-diagnostic.json"
+  ],
+  "limites": [
+    "Un seul noeud : pas de haute disponibilite",
+    "Copie hors VPS manuelle",
+    "Scan limite aux ports documentes",
+    "Renouvellement de abonnement a verifier dans OVH"
+  ]
+}

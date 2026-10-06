@@ -1,0 +1,50 @@
+{
+  "dateUtc": "2026-10-02T18:21:19.097350+00:00",
+  "perimetre": "VPS OVH distant reel ; client Docker sur PC Windows",
+  "checks": [
+    {
+      "test": "Site public HTTPS avec certificat reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion administrateur via WireGuard Internet direct",
+      "resultat": "OK"
+    },
+    {
+      "test": "API privee avec JWT autorise",
+      "resultat": "OK"
+    },
+    {
+      "test": "Faux JWT refuse dans le VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans JWT refuse dans le VPN",
+      "resultat": "OK"
+    },
+    {
+      "test": "Handshake WireGuard recent",
+      "resultat": "OK"
+    },
+    {
+      "test": "Endpoint WireGuard direct OVH",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee auth/login",
+      "resultat": "OK"
+    }
+  ]
+}

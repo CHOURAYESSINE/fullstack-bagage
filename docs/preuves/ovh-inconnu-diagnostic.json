@@ -1,0 +1,18 @@
+{
+  "dateUtc": "2026-10-02T18:27:16.538056+00:00",
+  "perimetre": "VPS OVH distant reel ; client Docker sur PC Windows",
+  "checks": [
+    {
+      "test": "Site public HTTPS avec certificat reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pair WireGuard inconnu : API privee inaccessible",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pair WireGuard inconnu : aucun handshake",
+      "resultat": "ECHEC"
+    }
+  ]
+}

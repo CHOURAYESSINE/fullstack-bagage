@@ -1,0 +1,7 @@
+
+LocalAddress LocalPort  State
+------------ ---------  -----
+127.0.0.1        55432 Listen
+127.0.0.1         5080 Listen
+
+

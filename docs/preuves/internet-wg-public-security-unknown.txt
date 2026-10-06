@@ -1,0 +1,2 @@
+OK - Pair WireGuard inconnu : aucun handshake Internet
+OK - Pair inconnu : HTTPS prive inaccessible

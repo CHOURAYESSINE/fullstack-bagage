@@ -1,0 +1,11 @@
+# Complément du compose Training_PFE, sans modification des volumes/données.
+services:
+  frontend:
+    ports: !override
+      - "127.0.0.1:80:80"
+  backend:
+    ports: !override
+      - "127.0.0.1:8080:8080"
+  db:
+    ports: !override
+      - "127.0.0.1:5005:5432"

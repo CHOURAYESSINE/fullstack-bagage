@@ -1,0 +1,5 @@
+Test persistance Docker - 2026-10-01T13:15:41.1175756Z
+Avant (bagages|historique) : 8|22
+Apres (bagages|historique) : 8|22
+OK - Compteurs conserves apres arret et redemarrage des conteneurs.
+OK - Tracking public livre et cinq etapes retrouves dans PostgreSQL.

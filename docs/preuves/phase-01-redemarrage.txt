@@ -1,0 +1,1 @@
+Redemarrage instance PostgreSQL et initialisation idempotente : OK. API /health/ready : 200.

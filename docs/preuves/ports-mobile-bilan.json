@@ -1,0 +1,25 @@
+{
+  "scanInternetExecute": true,
+  "ecoutesLoopbackVerifiees": true,
+  "scanInternetValide": false,
+  "portsPosteLocal": [
+    80,
+    5432,
+    8080,
+    5005
+  ],
+  "totalValideAvecComplement": 258,
+  "dateUtc": "2026-10-02T12:05:35.0935476Z",
+  "sortiesInternetDistinctes": true,
+  "portInternetEncoreJoignable": 8080,
+  "wireguardInternetValide": false,
+  "controleVmLocal": 4,
+  "reglagesUdpWindowsEnAttente": false,
+  "nouveauClientVpnLocal": 12,
+  "udpInternetRecu": false,
+  "reglagesTemporairesRetires": true,
+  "observationsPublicNonFerme": {
+    "premierScanVm": 8080,
+    "complementWindows": 80
+  }
+}

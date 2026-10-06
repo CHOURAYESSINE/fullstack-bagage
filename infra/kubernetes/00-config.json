@@ -1,0 +1,62 @@
+{
+  "apiVersion": "v1",
+  "kind": "List",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "name": "bagage",
+        "labels": {
+          "project": "fullstack-bagage"
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "ConfigMap",
+      "metadata": {
+        "name": "db-init",
+        "namespace": "bagage"
+      },
+      "data": {
+        "010-app-role.sh": "#!/bin/sh\nset -eu\npsql -v ON_ERROR_STOP=1 --username \"$POSTGRES_USER\" --dbname \"$POSTGRES_DB\" --set=app_password=\"$BAGAGE_APP_PASSWORD\" <<'SQL'\nCREATE ROLE bagage_app LOGIN PASSWORD :'app_password' NOSUPERUSER NOCREATEDB NOCREATEROLE;\nSQL\n",
+        "permissions.sql": "-- Ex\u00e9cuter avec le propri\u00e9taire apr\u00e8s les migrations. R\u00f4le cr\u00e9\u00e9 au pr\u00e9alable.\nREVOKE ALL ON DATABASE bagage FROM PUBLIC;\nGRANT CONNECT ON DATABASE bagage TO bagage_app;\nREVOKE CREATE ON SCHEMA public FROM PUBLIC;\nGRANT USAGE ON SCHEMA public TO bagage_app;\nGRANT SELECT ON roles TO bagage_app;\nGRANT SELECT, INSERT, UPDATE ON users, vols, bagages TO bagage_app;\nGRANT SELECT, INSERT ON historique_statuts TO bagage_app;\nREVOKE UPDATE, DELETE, TRUNCATE ON historique_statuts FROM bagage_app;\n-- L'API n'est ni propri\u00e9taire des tables ni superutilisateur.\n"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "ConfigMap",
+      "metadata": {
+        "name": "public-nginx",
+        "namespace": "bagage"
+      },
+      "data": {
+        "default.conf": "server {\n    listen 8080;\n    server_name _;\n    location = /healthz { access_log off; return 200 'ok'; }\n    location / { return 308 https://localhost:15443$request_uri; }\n}\nserver {\n    listen 8443 ssl;\n    server_name localhost 127.0.0.1;\n    root /usr/share/nginx/html;\n    server_tokens off;\n    ssl_certificate /tls/public.crt;\n    ssl_certificate_key /tls/public.key;\n    ssl_protocols TLSv1.2 TLSv1.3;\n    ssl_session_tickets off;\n    add_header X-Content-Type-Options nosniff always;\n    add_header X-Frame-Options DENY always;\n    add_header Referrer-Policy no-referrer always;\n    add_header Cache-Control no-store always;\n    add_header Content-Security-Policy \"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'\" always;\n    location ~ \"^/api/track/[A-Fa-f0-9]{48}$\" {\n        limit_except GET { deny all; }\n        proxy_pass http://api:8080;\n        proxy_set_header Authorization \"\";\n        proxy_set_header Host $host;\n        proxy_connect_timeout 5s;\n        proxy_read_timeout 15s;\n        access_log off;\n    }\n    location /api { return 404; }\n    location / { try_files $uri $uri/ /index.html; }\n}\n"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "ConfigMap",
+      "metadata": {
+        "name": "agents-nginx",
+        "namespace": "bagage"
+      },
+      "data": {
+        "default.conf": "server {\n    listen 127.0.0.1:8080;\n    location = /healthz { access_log off; return 200 'ok'; }\n    location / { return 404; }\n}\nserver {\n    # Le socket lui-m\u00eame appartient \u00e0 l'interface VPN, jamais \u00e0 l'interface edge.\n    listen 10.77.0.1:8443 ssl;\n    server_name 10.77.0.1;\n    root /usr/share/nginx/html;\n    server_tokens off;\n    ssl_certificate /tls/agents.crt;\n    ssl_certificate_key /tls/agents.key;\n    ssl_protocols TLSv1.2 TLSv1.3;\n    ssl_session_tickets off;\n    add_header X-Content-Type-Options nosniff always;\n    add_header X-Frame-Options DENY always;\n    add_header Referrer-Policy no-referrer always;\n    add_header Cache-Control no-store always;\n    add_header Content-Security-Policy \"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'\" always;\n    client_max_body_size 64k;\n    location /api/ {\n        proxy_pass http://api:8080;\n        proxy_set_header Host $host;\n        proxy_connect_timeout 5s;\n        proxy_read_timeout 15s;\n        access_log off;\n    }\n    location / { try_files $uri $uri/ /index.html; }\n}\n",
+        "segment.json": "{\"allowedOrigins\":[\"https://10.77.0.1:8443\"]}\n"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "ConfigMap",
+      "metadata": {
+        "name": "vpn-init",
+        "namespace": "bagage"
+      },
+      "data": {
+        "setup.sh": "#!/bin/sh\nset -eu\nip link add wg0 type wireguard\nwg setconf wg0 /wireguard/server.conf\nip address add 10.77.0.1/24 dev wg0\nip link set mtu 1420 up dev wg0\niptables -P INPUT DROP\niptables -P FORWARD DROP\niptables -P OUTPUT ACCEPT\niptables -A INPUT -i lo -j ACCEPT\niptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT\niptables -A INPUT -p udp --dport 51820 -j ACCEPT\niptables -A INPUT -i wg0 -s 10.77.0.0/24 -p tcp --dport 8443 -j ACCEPT\n"
+      }
+    }
+  ]
+}

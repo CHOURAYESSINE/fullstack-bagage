@@ -1,0 +1,16 @@
+
+Protocole tcp Plages d’exclusion de ports
+
+Port de début    Port de fin      
+-------------    -----------      
+      1462        1462      
+      4425        4524      
+      4525        4624      
+      4706        4805      
+      4806        4905      
+      4906        5005      
+      5041        5140      
+     50000       50059     *
+
+* - Exclusions de ports administrés.
+

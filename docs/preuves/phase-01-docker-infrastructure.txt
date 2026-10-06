@@ -1,0 +1,15 @@
+Validation Docker - 2026-10-01T13:20:25.1515989Z
+OK - Deux conteneurs du projet presents
+OK - API healthy
+OK - PostgreSQL healthy
+OK - API executee sans root
+OK - Systeme de fichiers API en lecture seule
+OK - Toutes les capabilities Linux retirees
+OK - Acquisition de nouveaux privileges interdite
+OK - API publiee seulement sur 127.0.0.1:18080
+OK - Aucun port PostgreSQL publie
+OK - Reseau base de donnees interne
+OK - API conteneur connectee a PostgreSQL
+OK - Swagger absent en Production : 404
+OK - Role PostgreSQL limite et historique protege
+OK - Evidence des versions et services sauvegardee

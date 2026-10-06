@@ -1,0 +1,10 @@
+{
+  "vpnWindowsNatifValide": true,
+  "internetValide": false,
+  "controlesReussis": 59,
+  "dateLocale": "2026-10-02",
+  "perimetre": "Laboratoire local k3s, clients Docker externes au cluster",
+  "capturesReelles": 6,
+  "internetPublicViaTunnelValide": true,
+  "complement": "Voir recette-bilan.json ; 59 controles de cette suite, 210 avec complements et observations"
+}

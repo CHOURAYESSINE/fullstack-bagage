@@ -1,0 +1,46 @@
+{
+  "dateUtc": "2026-10-02T08:31:23.572Z",
+  "client": "win32 / Node v24.19.0",
+  "checks": [
+    {
+      "test": "HTTPS public natif Windows : interface Angular disponible",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat et nom verifies avec CA explicite",
+      "resultat": "OK"
+    },
+    {
+      "test": "Negociation TLS moderne depuis Windows",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans CA locale : certificat refuse normalement",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi reel depuis Windows : trie et deux evenements",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi sans identite personnelle",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse la connexion privee",
+      "resultat": "OK"
+    },
+    {
+      "test": "Ancien port HTTP 18080 ferme sur Windows",
+      "resultat": "OK"
+    },
+    {
+      "test": "Ancien port HTTP 14200 ferme sur Windows",
+      "resultat": "OK"
+    },
+    {
+      "test": "Ancien port HTTP 14201 ferme sur Windows",
+      "resultat": "OK"
+    }
+  ]
+}

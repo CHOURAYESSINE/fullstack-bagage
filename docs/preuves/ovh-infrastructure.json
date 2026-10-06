@@ -1,0 +1,109 @@
+{
+  "dateUtc": "2026-10-02T18:37:59.937015+00:00",
+  "checks": [
+    {
+      "test": "api : pod pret",
+      "resultat": "OK"
+    },
+    {
+      "test": "api : conteneurs applicatifs non-root",
+      "resultat": "OK"
+    },
+    {
+      "test": "api : systeme de fichiers applicatif en lecture seule",
+      "resultat": "OK"
+    },
+    {
+      "test": "api : aucun jeton de service account monte",
+      "resultat": "OK"
+    },
+    {
+      "test": "public : pod pret",
+      "resultat": "OK"
+    },
+    {
+      "test": "public : conteneurs applicatifs non-root",
+      "resultat": "OK"
+    },
+    {
+      "test": "public : systeme de fichiers applicatif en lecture seule",
+      "resultat": "OK"
+    },
+    {
+      "test": "public : aucun jeton de service account monte",
+      "resultat": "OK"
+    },
+    {
+      "test": "agents : pod pret",
+      "resultat": "OK"
+    },
+    {
+      "test": "agents : conteneurs applicatifs non-root",
+      "resultat": "OK"
+    },
+    {
+      "test": "agents : systeme de fichiers applicatif en lecture seule",
+      "resultat": "OK"
+    },
+    {
+      "test": "agents : aucun jeton de service account monte",
+      "resultat": "OK"
+    },
+    {
+      "test": "db : pod pret",
+      "resultat": "OK"
+    },
+    {
+      "test": "db : conteneurs applicatifs non-root",
+      "resultat": "OK"
+    },
+    {
+      "test": "db : systeme de fichiers applicatif en lecture seule",
+      "resultat": "OK"
+    },
+    {
+      "test": "db : aucun jeton de service account monte",
+      "resultat": "OK"
+    },
+    {
+      "test": "api : service ClusterIP prive",
+      "resultat": "OK"
+    },
+    {
+      "test": "db : service ClusterIP prive",
+      "resultat": "OK"
+    },
+    {
+      "test": "agents : service ClusterIP prive",
+      "resultat": "OK"
+    },
+    {
+      "test": "Policy refuse par defaut ingress et egress presente",
+      "resultat": "OK"
+    },
+    {
+      "test": "SSH par cle uniquement et root interdit",
+      "resultat": "OK"
+    },
+    {
+      "test": "bagage-backup.timer actif",
+      "resultat": "OK"
+    },
+    {
+      "test": "certbot.timer actif",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sauvegarde privee presente",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pare-feu UFW actif",
+      "resultat": "OK"
+    },
+    {
+      "test": "Droits DB : historique ajout seul, sans CREATE",
+      "resultat": "OK"
+    }
+  ]
+}

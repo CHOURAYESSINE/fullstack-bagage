@@ -1,0 +1,26 @@
+[
+  {
+    "imageID": "sha256:af8c47e7928f1eb9a1c399682dad5794fd3074713b662144f0f71ebdd026beb4",
+    "image": "docker.io/library/fullstack-bagage-agents:latest"
+  },
+  {
+    "imageID": "sha256:e1a216985e791a39b9fe93100a7087859968fd9b71c2a5015d6a7e5e3e6ca278",
+    "image": "docker.io/library/fullstack-bagage-api:phase04"
+  },
+  {
+    "imageID": "sha256:7ef5e25bcceba0fefdd0ff2deb8a10d7142018c34cda1bef3168d13a1d0df82d",
+    "image": "docker.io/library/fullstack-bagage-api:latest"
+  },
+  {
+    "imageID": "sha256:1b3c642526f8d274b12bdcd93b90aeb7e68a1f59eb20613adb96ed561c01d98c",
+    "image": "docker.io/library/postgres:16"
+  },
+  {
+    "imageID": "sha256:7ef5e25bcceba0fefdd0ff2deb8a10d7142018c34cda1bef3168d13a1d0df82d",
+    "image": "docker.io/library/fullstack-bagage-api:latest"
+  },
+  {
+    "imageID": "sha256:904f889cd5abe40f492944770c6baeb347b80ca95f6de12e6e9b1294dfbf8b04",
+    "image": "docker.io/library/fullstack-bagage-public:latest"
+  }
+]

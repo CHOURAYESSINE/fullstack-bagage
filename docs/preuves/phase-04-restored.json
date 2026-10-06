@@ -1,0 +1,9 @@
+{
+  "dateUtc": "2026-10-02T09:37:07.103315+00:00",
+  "checks": [
+    {
+      "test": "Tunnel retabli : meme JWT accepte a nouveau",
+      "resultat": "OK"
+    }
+  ]
+}

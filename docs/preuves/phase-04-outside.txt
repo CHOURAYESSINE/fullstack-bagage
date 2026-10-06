@@ -1,0 +1,14 @@
+KUBERNETES - OUTSIDE - 2026-10-02T09:36:56.352756+00:00
+OK - Meme JWT : API agents inaccessible sans tunnel
+OK - Pod agents inaccessible directement sur HTTPS
+OK - Pod API inaccessible directement avec JWT
+OK - Service ClusterIP API inaccessible avec JWT
+OK - PostgreSQL inaccessible depuis le client externe
+OK - Frontend public accessible en HTTPS sans VPN
+OK - Proxy public refuse /api/users meme avec JWT
+OK - Proxy public refuse /api/vols meme avec JWT
+OK - Proxy public refuse /api/bagages meme avec JWT
+OK - Proxy public refuse /api/auth/login meme avec JWT
+OK - Suivi public reel : statut trie et historique conserves
+OK - Suivi public sans identite du passager
+OK - Certificat public verifie avec la CA du cluster

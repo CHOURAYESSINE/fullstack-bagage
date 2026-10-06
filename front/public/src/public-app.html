@@ -1,0 +1,21 @@
+<a href="#suivi" class="skip">Aller au suivi</a>
+<header class="public-header"><div class="brand"><span class="brand-symbol" aria-hidden="true">↗</span> bagage<span class="brand-dot">.</span></div><span class="service-label">LE SUIVI, TOUT SIMPLEMENT</span><span class="badge">Espace passagers</span></header>
+<main id="suivi">
+  <section class="hero">
+    <div class="intro"><span class="eyebrow"><span class="small-line"></span> DU DÉPART À L’ARRIVÉE</span><h1>Votre voyage.<br>Votre bagage.<br><em>L’esprit tranquille.</em></h1><p>Retrouvez les étapes de votre bagage,<br class="desktop-break"> de son enregistrement à sa livraison.</p><div class="privacy"><span aria-hidden="true">◈</span><span>Sans compte. Sans donnée personnelle affichée.</span></div></div>
+    <div class="tracking-card">
+      <div class="topline"><span class="eyebrow">SUIVI DES BAGAGES</span><span class="ticket-icon" aria-hidden="true">▥</span></div>
+      <h2>Où en est mon bagage ?</h2><p class="muted">Saisissez le code qui vous a été remis lors de l’enregistrement.</p>
+      <form (ngSubmit)="search()"><label for="tracking-code">Code de suivi</label><input id="tracking-code" name="code" [(ngModel)]="code" placeholder="Votre code à 48 caractères" maxlength="64" autocomplete="off" spellcheck="false" required aria-describedby="code-help"><small id="code-help">Le code figure sur votre reçu d’enregistrement.</small><button class="btn track-submit" [disabled]="busy()">{{ busy() ? 'Recherche en cours…' : 'Suivre mon bagage' }} <span aria-hidden="true">→</span></button></form>
+      @if(error()){<div class="alert" role="alert">{{ error() }}</div>}
+      <div class="card-foot"><span aria-hidden="true">◎</span> Conservez votre code de suivi à l’abri des regards.</div>
+    </div>
+  </section>
+  @if(result(); as bag){
+    <section class="result panel" aria-live="polite" aria-label="Résultat du suivi"><div class="topline"><div><span class="eyebrow">DERNIÈRE MISE À JOUR</span><h2>Votre bagage est {{ labels[bag.statut].toLowerCase() }}.</h2></div><span [class]="'badge '+bag.statut">{{ labels[bag.statut] }}</span></div><p class="mono tracking-reference">{{ bag.trackingId }}</p><div class="rule"></div><ol class="history">@for(event of bag.historique; track $index){<li><strong>{{ labels[event.statut] }}</strong><time>{{ event.horodatage | date:'dd/MM/yyyy à HH:mm:ss' }}</time></li>}</ol>@if(bag.statut==='perdu'){<p class="alert">Veuillez vous rapprocher du service bagages de votre aéroport avec votre code de suivi.</p>}<p class="muted time-note">Horaires affichés dans le fuseau de votre appareil. Actualisez la recherche pour consulter le dernier statut.</p></section>
+  } @else {
+    <section class="journey" aria-label="Les étapes de votre bagage"><div><span class="eyebrow">CHAQUE ÉTAPE COMPTE</span><h2>Un parcours, cinq étapes.</h2></div><ol><li><span>01</span>Enregistré</li><li><span>02</span>Trié</li><li><span>03</span>Chargé</li><li><span>04</span>En vol</li><li><span>05</span>Livré</li></ol></section>
+  }
+  <aside class="help"><div><strong>Besoin d’aide ?</strong><p>Pour un code introuvable ou une question, contactez le comptoir bagages de votre compagnie.</p></div><span aria-hidden="true">↗</span></aside>
+</main>
+<footer><span>bagage. · Suivi aéroportuaire</span><span>Votre code, votre suivi.</span></footer>

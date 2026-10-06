@@ -1,0 +1,4 @@
+[2026-10-01T08:11:11.130722800Z][RegisterProductStep][I] Registering docker-desktop url-protocol
+[2026-10-01T08:11:11.131723000Z][InstallWorkflow][I] Phase 5: Validation
+[2026-10-01T08:11:11.132722100Z][InstallWorkflow][I] Phase 6: Cleanup
+[2026-10-01T08:11:11.133723300Z][InstallWorkflow][I] Installation succeeded

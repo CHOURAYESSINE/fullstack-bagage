@@ -1,0 +1,26 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+.env
+.env.*
+!.env.example
+work/
+**/*.user
+**/*.pfx
+**/*.key
+.vs/
+
+**/.angular/
+**/out-tsc/
+**/__pycache__/
+
+# Fichiers temporaires du rapport
+rapport/verification/
+rapport/*.aux
+rapport/*.log
+rapport/*.out
+rapport/*.toc
+rapport/*.lof
+rapport/*.lot
+rapport/compilation-console.txt

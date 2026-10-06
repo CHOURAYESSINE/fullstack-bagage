@@ -1,0 +1,25 @@
+{
+  "dateUtc": "2026-10-02T18:56:42.434Z",
+  "checks": [
+    {
+      "test": "HTTPS public reconnu apres redemarrage",
+      "resultat": "OK"
+    },
+    {
+      "test": "Bagage et historique conserves apres redemarrage",
+      "resultat": "OK"
+    },
+    {
+      "test": "Suivi public sans identite du passager",
+      "resultat": "OK"
+    },
+    {
+      "test": "TLS prive verifie via VPN Windows",
+      "resultat": "OK"
+    },
+    {
+      "test": "Connexion administrateur native Windows apres redemarrage",
+      "resultat": "OK"
+    }
+  ]
+}

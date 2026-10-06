@@ -1,0 +1,63 @@
+{
+  "dateUtc": "2026-10-02T10:46:01.951514+00:00",
+  "machine": "bagage-externe",
+  "systeme": "Linux",
+  "client": "VM reelle",
+  "jwtFourni": false,
+  "vpnActifDeclare": false,
+  "portsHoteVerifies": "8443,18080,14201",
+  "checks": [
+    {
+      "test": "Interface publique Angular joignable depuis la VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "Certificat public verifie et TLS moderne",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans CA explicite : certificat refuse",
+      "resultat": "OK"
+    },
+    {
+      "test": "Bagage Kubernetes suivi depuis la VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "Aucune identite personnelle dans le suivi",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Proxy public refuse /api/auth/login",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port prive hote 8443 ferme depuis VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port prive hote 18080 ferme depuis VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port prive hote 14201 ferme depuis VM",
+      "resultat": "OK"
+    },
+    {
+      "test": "HTTPS agents inaccessible sans VPN",
+      "resultat": "OK"
+    }
+  ]
+}

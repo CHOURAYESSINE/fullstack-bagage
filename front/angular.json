@@ -1,0 +1,122 @@
+{
+  "cli": {
+    "analytics": false
+  },
+  "version": 1,
+  "projects": {
+    "public": {
+      "architect": {
+        "build": {
+          "options": {
+            "tsConfig": "public/tsconfig.app.json",
+            "index": "public/src/index.html",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public/public"
+              }
+            ],
+            "styles": [
+              "shared/styles.css"
+            ],
+            "browser": "public/src/main.ts",
+            "outputPath": "dist/public"
+          },
+          "builder": "@angular/build:application",
+          "defaultConfiguration": "production",
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "maximumError": "1MB",
+                  "maximumWarning": "650kB",
+                  "type": "initial"
+                }
+              ],
+              "outputHashing": "all",
+              "optimization": {
+                "styles": {
+                  "inlineCritical": false,
+                  "minify": true
+                },
+                "fonts": false,
+                "scripts": true
+              }
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": {
+            "buildTarget": "public:build:development",
+            "proxyConfig": "public/proxy.conf.json"
+          }
+        }
+      },
+      "root": "public",
+      "sourceRoot": "public/src",
+      "projectType": "application"
+    },
+    "agents": {
+      "architect": {
+        "build": {
+          "options": {
+            "tsConfig": "agents/tsconfig.app.json",
+            "index": "agents/src/index.html",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "agents/public"
+              }
+            ],
+            "styles": [
+              "agents/src/styles.css"
+            ],
+            "browser": "agents/src/main.ts",
+            "outputPath": "dist/agents"
+          },
+          "builder": "@angular/build:application",
+          "defaultConfiguration": "production",
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "maximumError": "1MB",
+                  "maximumWarning": "650kB",
+                  "type": "initial"
+                }
+              ],
+              "outputHashing": "all",
+              "optimization": {
+                "styles": {
+                  "inlineCritical": false,
+                  "minify": true
+                },
+                "fonts": false,
+                "scripts": true
+              }
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": {
+            "buildTarget": "agents:build:development",
+            "proxyConfig": "agents/proxy.conf.json"
+          }
+        }
+      },
+      "root": "agents",
+      "sourceRoot": "agents/src",
+      "projectType": "application"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+OK - VM : interface agents accessible avec TLS verifie
+OK - VM : authentification dans le tunnel
+OK - VM : JWT accepte sur API privee
+OK - VM : sans JWT acces prive refuse

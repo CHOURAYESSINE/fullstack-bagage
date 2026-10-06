@@ -1,0 +1,9 @@
+OK - Authentification initiale
+OK - Compte fictif pour test verrouillage
+OK - Mot de passe incorrect tentative 1 : 401
+OK - Mot de passe incorrect tentative 2 : 401
+OK - Mot de passe incorrect tentative 3 : 401
+OK - Mot de passe incorrect tentative 4 : 401
+OK - Mot de passe incorrect tentative 5 : 401
+OK - Compte verrouille meme avec mot de passe correct : 401
+OK - Limitation du debit de connexion : 429

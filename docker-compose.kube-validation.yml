@@ -1,0 +1,36 @@
+name: bagage-validation
+services:
+  vpn-client:
+    image: fullstack-bagage-network-tools
+    command: [/lab/client.sh]
+    networks: [cluster]
+    cap_drop: [ALL]
+    cap_add: [NET_ADMIN]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+    volumes:
+      - ./work/phase-04/wireguard/client.conf:/wireguard/client.conf:ro
+      - ./work/phase-04/pki/ca.crt:/tls/ca.crt:ro
+      - ./work/phase-04/login:/login:ro
+      - ./work/phase-04/exchange:/exchange
+      - ./docs/preuves:/evidence
+      - ./infra/kubernetes/probe.py:/test/probe.py:ro
+  outside:
+    image: fullstack-bagage-network-tools
+    command: [sh, -c, 'echo "Client externe au cluster Kubernetes, sans tunnel VPN."; exec sleep infinity']
+    networks: [cluster]
+    cap_drop: [ALL]
+    cap_add: [NET_ADMIN]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+    volumes:
+      - ./work/phase-04/pki/ca.crt:/tls/ca.crt:ro
+      - ./work/phase-04/exchange:/exchange:ro
+      - ./docs/preuves:/evidence
+      - ./infra/kubernetes/probe.py:/test/probe.py:ro
+networks:
+  cluster:
+    external: true
+    name: k3d-bagage

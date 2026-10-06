@@ -1,0 +1,8 @@
+VM Ubuntu bagage-externe : HTTPS public via Internet, sans WireGuard
+OK - Interface Angular Internet avec certificat systeme verifie
+OK - Suivi reel Kubernetes via Internet
+OK - Suivi Internet sans identite personnelle
+OK - Internet : route privee refusee users
+OK - Internet : route privee refusee vols
+OK - Internet : route privee refusee bagages
+OK - Internet : route privee refusee auth/login

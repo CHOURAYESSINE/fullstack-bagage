@@ -1,0 +1,22 @@
+{
+  "dateUtc": "2026-10-02T08:31:29.047Z",
+  "client": "win32 / Node v24.19.0",
+  "checks": [
+    {
+      "test": "Interface agents accessible par VPN Windows",
+      "resultat": "OK"
+    },
+    {
+      "test": "Authentification depuis Windows dans le tunnel",
+      "resultat": "OK"
+    },
+    {
+      "test": "JWT valide accepte sur VPN Windows",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sans JWT : refus 401 meme sur VPN Windows",
+      "resultat": "OK"
+    }
+  ]
+}

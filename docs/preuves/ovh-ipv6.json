@@ -1,0 +1,57 @@
+{
+  "dateUtc": "2026-10-02T18:55:39.631Z",
+  "checks": [
+    {
+      "test": "Site public accessible en IPv6 avec TLS reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 5432",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 8080",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 8443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 5005",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 6443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 16443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 31443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP IPv6 ferme 31820",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route privee refusee sur IPv6 users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route privee refusee sur IPv6 bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route privee refusee sur IPv6 vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route privee refusee sur IPv6 auth/login",
+      "resultat": "OK"
+    }
+  ]
+}

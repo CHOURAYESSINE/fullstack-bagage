@@ -1,0 +1,31 @@
+{
+  "dateUtc": "2026-10-02T12:02:05.702656+00:00",
+  "portee": "Scan TCP limite du point entree domestique depuis sortie Internet mobile verifiee",
+  "adressesPubliquesMasquees": true,
+  "checks": [
+    {
+      "test": "Adresse cible domestique publique",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sortie VM identique a la sortie mobile observee",
+      "resultat": "OK"
+    },
+    {
+      "test": "Sortie mobile differente de la sortie domestique",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP 80 inaccessible via Internet mobile",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP 5432 inaccessible via Internet mobile",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP 8080 inaccessible via Internet mobile",
+      "resultat": "ECHEC"
+    }
+  ]
+}

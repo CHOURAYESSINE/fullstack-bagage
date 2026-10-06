@@ -1,0 +1,92 @@
+# Surcharge de sécurité, à utiliser AVEC docker-compose.yml. Requiert Compose >= 2.24.4.
+services:
+  api:
+    ports: !reset []
+    networks: !override
+      private_api: {ipv4_address: 172.26.42.10}
+      public_api: {ipv4_address: 172.26.43.10}
+      database: {}
+  public:
+    ports: !override ['127.0.0.1:14443:8443', '127.0.0.1:14080:8080']
+    networks: !override
+      edge: {ipv4_address: 172.26.41.3}
+      public_api: {ipv4_address: 172.26.43.2}
+    volumes:
+      - ./infra/network/public-tls.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./work/phase-03/pki/public.crt:/tls/public.crt:ro
+      - ./work/phase-03/pki/public.key:/tls/public.key:ro
+  agents:
+    ports: !reset []
+    networks: !reset []
+    network_mode: service:vpn-server
+    depends_on:
+      vpn-server: {condition: service_healthy}
+    volumes:
+      - ./infra/network/agents-tls.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./infra/network/segment-vpn.json:/usr/share/nginx/html/segment.json:ro
+      - ./work/phase-03/pki/agents.crt:/tls/agents.crt:ro
+      - ./work/phase-03/pki/agents.key:/tls/agents.key:ro
+  vpn-server:
+    build: ./infra/network
+    image: fullstack-bagage-network-tools
+    command: [/lab/server.sh]
+    ports: ['127.0.0.1:51820:51820/udp']
+    networks:
+      edge: {ipv4_address: 172.26.41.2}
+      private_api: {ipv4_address: 172.26.42.2}
+    cap_drop: [ALL]
+    cap_add: [NET_ADMIN]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+    sysctls: {net.ipv4.ip_forward: '0', net.ipv6.conf.all.disable_ipv6: '1'}
+    volumes:
+      - ./work/phase-03/wireguard/server.conf:/wireguard/server.conf:ro
+    healthcheck:
+      test: [CMD-SHELL, 'ip link show wg0 >/dev/null && iptables -S INPUT | grep -q -- "-P INPUT DROP"']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  vpn-client:
+    image: fullstack-bagage-network-tools
+    command: [/lab/client.sh]
+    profiles: [validation]
+    depends_on:
+      vpn-server: {condition: service_healthy}
+    networks:
+      edge: {ipv4_address: 172.26.41.10}
+    cap_drop: [ALL]
+    cap_add: [NET_ADMIN]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+    volumes:
+      - ./work/phase-03/wireguard/client.conf:/wireguard/client.conf:ro
+      - ./work/phase-03/pki/ca.crt:/tls/ca.crt:ro
+      - ./work/phase-03/login:/login:ro
+      - ./work/phase-03/exchange:/exchange
+      - ./docs/preuves:/evidence
+  outside:
+    image: fullstack-bagage-network-tools
+    command: [/lab/outside.sh]
+    profiles: [validation]
+    networks:
+      edge: {ipv4_address: 172.26.41.11}
+    cap_drop: [ALL]
+    cap_add: [NET_ADMIN]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+    volumes:
+      - ./work/phase-03/pki/ca.crt:/tls/ca.crt:ro
+      - ./work/phase-03/exchange:/exchange:ro
+      - ./docs/preuves:/evidence
+networks:
+  edge:
+    ipam: {config: [{subnet: 172.26.41.0/24}]}
+  private_api:
+    internal: true
+    ipam: {config: [{subnet: 172.26.42.0/24}]}
+  public_api:
+    internal: true
+    ipam: {config: [{subnet: 172.26.43.0/24}]}

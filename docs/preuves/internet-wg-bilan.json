@@ -1,0 +1,28 @@
+{
+  "portsPartagesPosteLoopback": [
+    80,
+    5432,
+    8080,
+    5005
+  ],
+  "octetsRecusEtEnvoyes": true,
+  "totalPhase4EtComplements": 281,
+  "scanLimiteAuxPointsEntreeProjet": true,
+  "scanPortsInfrastructureFournisseurExecute": false,
+  "pairInconnuRefuse": true,
+  "mode": "WireGuard UDP via relais public Pinggy, client VMware Ubuntu",
+  "controlesSecuritePointEntree": 11,
+  "fermetureGlobaleAdresseWanValidee": false,
+  "endpointPublicAlloueVerifie": true,
+  "limites": [
+    "Relais temporaire tiers, pas de serveur de production",
+    "Fermeture globale WAN et repondants TCP 80/8080 non identifies",
+    "Deux VM et relais local sur le meme ordinateur physique"
+  ],
+  "dateUtc": "2026-10-02T12:33:50.8638003Z",
+  "redirectionDirecteRouteurValidee": false,
+  "controlesVpnEtJwt": 12,
+  "totalNouveaux": 23,
+  "relaisUdpArrete": true,
+  "tunnelHttpsArrete": true
+}

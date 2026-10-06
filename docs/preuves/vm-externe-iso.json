@@ -1,0 +1,7 @@
+{
+  "source": "F:\\ubuntu-18.04.1-desktop-amd64.iso",
+  "sha256Source": "5748706937539418ee5707bd538c4f5eabae485d17aa49fb13ce2c9b70532433",
+  "verification": "Correspondance avec SHA256SUMS officiel Ubuntu 18.04.1",
+  "originalModifie": false,
+  "mediaInstallation": "Copie privee avec preseed, jamais joindre au rapport"
+}

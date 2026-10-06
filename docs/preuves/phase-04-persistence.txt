@@ -1,0 +1,3 @@
+KUBERNETES - PERSISTENCE - 2026-10-02T09:37:34.668438+00:00
+OK - Suivi public reel : statut trie et historique conserves
+OK - Suivi public sans identite du passager

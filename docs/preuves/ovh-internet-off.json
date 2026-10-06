@@ -1,0 +1,66 @@
+{
+  "dateUtc": "2026-10-02T18:23:55.593670+00:00",
+  "perimetre": "VPS OVH distant reel ; client Docker sur PC Windows",
+  "checks": [
+    {
+      "test": "Site public HTTPS avec certificat reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "API privee inaccessible hors VPN avec le meme JWT",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee auth/login",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 5432",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 8080",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 8443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 5005",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 6443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 16443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 31443",
+      "resultat": "OK"
+    },
+    {
+      "test": "Port TCP OVH ferme 31820",
+      "resultat": "OK"
+    },
+    {
+      "test": "Swagger non publie",
+      "resultat": "OK"
+    }
+  ]
+}

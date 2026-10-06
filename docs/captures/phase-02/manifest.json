@@ -1,0 +1,65 @@
+[
+  {
+    "fichier": "01-accueil-public.jpg",
+    "octets": 67343,
+    "sha256": "0023607DA4F621CC5B470E5265A932F8100935E4C13825C0EBA8B5940BC42B31",
+    "archiveUtc": "2026-10-01T13:51:44.3419814Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "02-suivi-public.jpg",
+    "octets": 24371,
+    "sha256": "87293E34C99108CA500D7E3A4C814321B2EB8D339DE45EE1EEB01EC16120A167",
+    "archiveUtc": "2026-10-01T13:51:44.3544821Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "03-connexion-agents.jpg",
+    "octets": 46102,
+    "sha256": "C7B301369EF1919AD49FCE0228B3B843A11F764D71B6A54AB7CB27444E446707",
+    "archiveUtc": "2026-10-01T13:51:44.3556397Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "04-dashboard-superviseur.jpg",
+    "octets": 56289,
+    "sha256": "79EB4EF72D98C6F60AAF5AA6D27DDD2BE5B2A9F6461DA8D5D259C6A5862E74E7",
+    "archiveUtc": "2026-10-01T13:51:44.3567667Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "05-anomalie-historique.jpg",
+    "octets": 67059,
+    "sha256": "6CDECCC0D6AD2B95E0A646E160DAB16D50031988096B4B1B6FC0F161F7173845",
+    "archiveUtc": "2026-10-01T13:51:44.3579484Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "06-enregistrement-recu.jpg",
+    "octets": 31195,
+    "sha256": "144687DE4A8CADDE3508B007FC4EA59AE657E64502B7EB6AA6B28FE59175B87E",
+    "archiveUtc": "2026-10-01T13:51:44.3589542Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "07-role-tri.jpg",
+    "octets": 29608,
+    "sha256": "9D5CA762905F53FEB6BDAC26FC556BC878183E1F1193FF7642A3C77B13709B32",
+    "archiveUtc": "2026-10-01T13:51:44.3599755Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "08-creation-compte.jpg",
+    "octets": 26994,
+    "sha256": "9AB798DF8B1AF1A289668DF6419063048294D7267D2158A5A645EA5BD89FA9C1",
+    "archiveUtc": "2026-10-01T13:51:44.3609505Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  },
+  {
+    "fichier": "09-origine-refusee.jpg",
+    "octets": 18521,
+    "sha256": "71F7953724E01140539397BB180881AF1F21C8755B9AADCC6DC4AE93E2D379BA",
+    "archiveUtc": "2026-10-01T13:51:44.3618549Z",
+    "source": "Capture originale du navigateur : application Angular connectée à API Docker et PostgreSQL"
+  }
+]

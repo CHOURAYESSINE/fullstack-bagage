@@ -1,0 +1,7 @@
+OK - Meme JWT : API privee inaccessible VPN Windows coupe
+OK - Interface agents inaccessible VPN Windows coupe
+OK - Suivi public reste accessible sans VPN
+OK - Proxy public refuse users avec le meme JWT
+OK - Proxy public refuse vols avec le meme JWT
+OK - Proxy public refuse bagages avec le meme JWT
+OK - Proxy public refuse auth/login avec le meme JWT

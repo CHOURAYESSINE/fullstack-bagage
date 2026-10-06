@@ -1,0 +1,17 @@
+KUBERNETES - VPN - 2026-10-02T09:36:54.251633+00:00
+OK - Interface Angular agents servie par le pod via WireGuard
+OK - Origine Angular reservee au VPN
+OK - Connexion administrateur dans Kubernetes
+OK - JWT valide accepte via VPN
+OK - Sans JWT : refus applicatif 401 meme avec VPN
+OK - Administrateur sans privileges metier : creation vol refusee 403
+OK - Creation superviseur avec role explicite
+OK - Connexion superviseur
+OK - Creation vol persiste dans PostgreSQL Kubernetes
+OK - Enregistrement bagage et code aleatoire
+OK - Transition enregistre vers trie
+OK - Historique prive accessible au superviseur
+OK - Suivi public reel : statut trie et historique conserves
+OK - Suivi public sans identite du passager
+OK - Handshake WireGuard reel avec le pod Kubernetes
+OK - Certificat agents valide et TLS 1.2 ou 1.3

@@ -1,0 +1,45 @@
+{
+  "dateUtc": "2026-10-02T09:42:00.307Z",
+  "url": "https://while-february-junior-childrens.trycloudflare.com",
+  "client": "Node Windows vers URL Internet Cloudflare ; origine TLS verifiee",
+  "scanDistant": false,
+  "wireguardDistant": false,
+  "checks": [
+    {
+      "test": "URL Internet HTTPS : interface Angular",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : suivi reel trie et deux evenements",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : aucune identite personnelle",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : route privee users refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : route privee vols refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : route privee bagages refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : route privee auth/login refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : ecriture suivi refusee",
+      "resultat": "OK"
+    },
+    {
+      "test": "URL Internet : code invalide refuse",
+      "resultat": "OK"
+    }
+  ]
+}

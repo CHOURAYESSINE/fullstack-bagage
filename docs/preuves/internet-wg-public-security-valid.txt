@@ -1,0 +1,9 @@
+OK - VPN Internet valide : faux JWT refuse
+OK - Endpoint WireGuard : adresse publique du relais alloue
+OK - Pair autorise : handshake Internet recent
+OK - WireGuard Internet : octets recus et envoyes
+OK - Scan HTTPS public : refus /api/users
+OK - Scan HTTPS public : refus /api/vols
+OK - Scan HTTPS public : refus /api/bagages
+OK - Scan HTTPS public : refus /api/auth/login
+OK - Scan HTTPS public : Swagger API non publie

@@ -1,0 +1,113 @@
+{
+  "checks": [
+    {
+      "resultat": "OK",
+      "test": "public : pod pret"
+    },
+    {
+      "resultat": "OK",
+      "test": "public : pas de jeton Kubernetes ni reseau hote"
+    },
+    {
+      "resultat": "OK",
+      "test": "public : non-root sans elevation, fichiers en lecture seule"
+    },
+    {
+      "resultat": "OK",
+      "test": "public : capabilities supprimees et ressources bornees"
+    },
+    {
+      "resultat": "OK",
+      "test": "public : probe de disponibilite"
+    },
+    {
+      "resultat": "OK",
+      "test": "agents : pod pret"
+    },
+    {
+      "resultat": "OK",
+      "test": "agents : pas de jeton Kubernetes ni reseau hote"
+    },
+    {
+      "resultat": "OK",
+      "test": "agents : non-root sans elevation, fichiers en lecture seule"
+    },
+    {
+      "resultat": "OK",
+      "test": "agents : capabilities supprimees et ressources bornees"
+    },
+    {
+      "resultat": "OK",
+      "test": "agents : probe de disponibilite"
+    },
+    {
+      "resultat": "OK",
+      "test": "api : pod pret"
+    },
+    {
+      "resultat": "OK",
+      "test": "api : pas de jeton Kubernetes ni reseau hote"
+    },
+    {
+      "resultat": "OK",
+      "test": "api : non-root sans elevation, fichiers en lecture seule"
+    },
+    {
+      "resultat": "OK",
+      "test": "api : capabilities supprimees et ressources bornees"
+    },
+    {
+      "resultat": "OK",
+      "test": "api : probe de disponibilite"
+    },
+    {
+      "resultat": "OK",
+      "test": "db : pod pret"
+    },
+    {
+      "resultat": "OK",
+      "test": "db : pas de jeton Kubernetes ni reseau hote"
+    },
+    {
+      "resultat": "OK",
+      "test": "db : non-root sans elevation, fichiers en lecture seule"
+    },
+    {
+      "resultat": "OK",
+      "test": "db : capabilities supprimees et ressources bornees"
+    },
+    {
+      "resultat": "OK",
+      "test": "db : probe de disponibilite"
+    },
+    {
+      "resultat": "OK",
+      "test": "api : ClusterIP sans publication externe"
+    },
+    {
+      "resultat": "OK",
+      "test": "agents : ClusterIP sans publication externe"
+    },
+    {
+      "resultat": "OK",
+      "test": "db : ClusterIP sans publication externe"
+    },
+    {
+      "resultat": "OK",
+      "test": "Policy refuse entrant et sortant par defaut"
+    },
+    {
+      "resultat": "OK",
+      "test": "Compte PostgreSQL applicatif sans superuser/creation base/role"
+    },
+    {
+      "resultat": "OK",
+      "test": "Historique : ajout sans modification/suppression/truncate"
+    },
+    {
+      "resultat": "OK",
+      "test": "Ports cluster publies sur loopback uniquement"
+    }
+  ],
+  "dateUtc": "2026-10-02T09:43:19.5067108Z"
+}

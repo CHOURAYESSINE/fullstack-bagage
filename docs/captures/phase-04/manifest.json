@@ -1,0 +1,42 @@
+{
+  "fuseau": "Africa/Lagos",
+  "dateLocale": "2026-10-02",
+  "captures": [
+    {
+      "origine": "Docker Desktop : capture JPEG originale, sans retouche",
+      "fichier": "01-cluster-k3s.jpg",
+      "sha256": "E00A96223BFF9E432B679000D0EA343EC3B9B2E3FDA751ECAF38050DE1B86EBF",
+      "octets": 73974
+    },
+    {
+      "origine": "Docker Desktop : capture JPEG originale, sans retouche",
+      "fichier": "02-vpn-kubernetes.jpg",
+      "sha256": "78A5C3FA08D319DFD6F07EF1D3D6D29F9ACFA2E9178C9EA36FD1A1C1FFF78128",
+      "octets": 130567
+    },
+    {
+      "origine": "Docker Desktop : capture JPEG originale, sans retouche",
+      "fichier": "03-hors-vpn-persistance.jpg",
+      "sha256": "34309AF19F8E4C4596B862042B54E9498DAC6FF52FF01868F2696826641E81BD",
+      "octets": 130339
+    },
+    {
+      "origine": "Docker Desktop : capture JPEG originale, sans retouche",
+      "fichier": "04-ressources-kubernetes.jpg",
+      "sha256": "DA8F843E9E3B3F9D3BD60251F7AE5202E1A565D7954BA5E3DFA4A6B4269511AE",
+      "octets": 130826
+    },
+    {
+      "origine": "Docker Desktop : capture JPEG originale des résultats réellement produits par les tests Windows natifs",
+      "fichier": "05-vpn-windows-natif.jpg",
+      "sha256": "E534E8E7D66B794426B4F530EC38BEFFA99E09836E51863CF17A95521D7873A4",
+      "octets": 140841
+    },
+    {
+      "origine": "Docker Desktop : capture JPEG originale des sorties des tests executes dans la VM VMware",
+      "fichier": "06-validation-vmware.jpg",
+      "sha256": "422ACBDEF582AAFC2396F5F13BDF50D4A01CF1707D7C81AF74A896A323973C98",
+      "octets": 120005
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "dateUtc": "2026-10-02T18:28:04.755470+00:00",
+  "perimetre": "VPS OVH distant reel ; client Docker sur PC Windows",
+  "checks": [
+    {
+      "test": "Site public HTTPS avec certificat reconnu",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pair WireGuard inconnu : API privee inaccessible",
+      "resultat": "OK"
+    },
+    {
+      "test": "Pair WireGuard inconnu : aucun handshake",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee users",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee bagages",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee vols",
+      "resultat": "OK"
+    },
+    {
+      "test": "Route publique privee refusee auth/login",
+      "resultat": "OK"
+    }
+  ]
+}

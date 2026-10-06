@@ -1,0 +1,10 @@
+VALIDATION RESEAU - VPN - 2026-10-01T23:22:00.457536+00:00
+OK - Interface agents HTTPS joignable par WireGuard
+OK - Origine Angular limitee au VPN
+OK - Connexion JWT a travers le tunnel chiffre
+OK - JWT valide : liste comptes autorisee sur VPN
+OK - Sans JWT : API privee refusee en 401 meme sur VPN
+OK - Certificat agents verifie avec CA locale et TLS moderne
+OK - Handshake WireGuard non nul
+OK - Octets WireGuard recus et emis
+Transport TLS : TLSv1.3 ; handshake actif ; cles et JWT masques.

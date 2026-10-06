@@ -1,0 +1,58 @@
+[
+  {
+    "test": "Deux conteneurs du projet presents",
+    "resultat": "OK"
+  },
+  {
+    "test": "API healthy",
+    "resultat": "OK"
+  },
+  {
+    "test": "PostgreSQL healthy",
+    "resultat": "OK"
+  },
+  {
+    "test": "API executee sans root",
+    "resultat": "OK"
+  },
+  {
+    "test": "Systeme de fichiers API en lecture seule",
+    "resultat": "OK"
+  },
+  {
+    "test": "Toutes les capabilities Linux retirees",
+    "resultat": "OK"
+  },
+  {
+    "test": "Acquisition de nouveaux privileges interdite",
+    "resultat": "OK"
+  },
+  {
+    "test": "API publiee seulement sur 127.0.0.1:18080",
+    "resultat": "OK"
+  },
+  {
+    "test": "Aucun port PostgreSQL publie",
+    "resultat": "OK"
+  },
+  {
+    "test": "Reseau base de donnees interne",
+    "resultat": "OK"
+  },
+  {
+    "test": "API conteneur connectee a PostgreSQL",
+    "resultat": "OK"
+  },
+  {
+    "test": "Swagger absent en Production : 404",
+    "resultat": "OK"
+  },
+  {
+    "test": "Role PostgreSQL limite et historique protege",
+    "resultat": "OK"
+  },
+  {
+    "test": "Evidence des versions et services sauvegardee",
+    "resultat": "OK"
+  }
+]

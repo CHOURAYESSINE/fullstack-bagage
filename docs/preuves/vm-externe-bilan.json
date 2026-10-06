@@ -1,0 +1,30 @@
+{
+  "phase": "4d - VM Ubuntu fournie",
+  "publicTlsSansVpn": 13,
+  "httpsInternetPublic": 7,
+  "reglesParefeuTemporairesRetirees": true,
+  "totalPhase4EtComplements": 242,
+  "coupureMemeJwt": 6,
+  "baseline": 210,
+  "handshake": 1,
+  "portsAutresServicesExclus": [
+    5432,
+    8080
+  ],
+  "relaisArrete": true,
+  "vpnAuthentification": 4,
+  "tunnelInternetTemporaireArrete": true,
+  "limites": [
+    "VM sur le meme poste physique",
+    "Scan depuis Internet distant non execute",
+    "WireGuard Internet non execute"
+  ],
+  "dateUtc": "2026-10-02T10:53:53.5704094Z",
+  "totalNouveauxControles": 32,
+  "portsHoteVerifies": [
+    8443,
+    18080,
+    14201
+  ],
+  "retablissementMemeJwt": 1
+}

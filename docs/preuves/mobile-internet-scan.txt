@@ -1,0 +1,12 @@
+OK - Adresse cible domestique publique
+OK - Sortie VM identique a la sortie mobile observee
+OK - Sortie mobile differente de la sortie domestique
+OK - Port TCP 80 inaccessible via Internet mobile
+OK - Port TCP 5432 inaccessible via Internet mobile
+ECHEC - Port TCP 8080 inaccessible via Internet mobile
+Traceback (most recent call last):
+  File "/home/bagagetest/probe_mobile_scan.py", line 19, in <module>
+    check('Port TCP '+str(port)+' inaccessible via Internet mobile',closed)
+  File "/home/bagagetest/probe_mobile_scan.py", line 9, in check
+    if not ok:raise RuntimeError(label)
+RuntimeError: Port TCP 8080 inaccessible via Internet mobile

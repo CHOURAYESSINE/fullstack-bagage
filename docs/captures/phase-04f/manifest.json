@@ -1,0 +1,12 @@
+[
+  {
+    "origine": "Capture directe VMware ; tests Internet executes dans Ubuntu",
+    "sha256": "646d54daf646c16f58bc57ea6bd229edd47024169b72093a78a20f28a2979964",
+    "fichier": "01-wireguard-internet.png"
+  },
+  {
+    "origine": "Capture directe VMware ; tests Internet executes dans Ubuntu",
+    "sha256": "efba395be11670fccc9701cdad96d56b321126c07e61bfd4f2c3901575355383",
+    "fichier": "02-controles-internet.png"
+  }
+]

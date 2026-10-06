@@ -1,0 +1,9 @@
+{
+  "dateUtc": "2026-10-01T23:22:41.767011+00:00",
+  "checks": [
+    {
+      "test": "Tunnel retabli : le meme JWT redevient utilisable",
+      "resultat": "OK"
+    }
+  ]
+}

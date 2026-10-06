@@ -1,0 +1,5 @@
+lo               UNKNOWN        127.0.0.1/8 
+enp0s17          UP             192.168.233.137/24 
+default via 192.168.233.2 dev enp0s17 proto dhcp src 192.168.233.137 metric 100 
+192.168.233.0/24 dev enp0s17 proto kernel scope link src 192.168.233.137 
+192.168.233.2 dev enp0s17 proto dhcp scope link src 192.168.233.137 metric 100 

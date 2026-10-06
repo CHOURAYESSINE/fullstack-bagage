@@ -1,0 +1,4 @@
+OK - Ancien port HTTP 18080 ferme sur Windows.
+OK - Ancien port HTTP 14200 ferme sur Windows.
+OK - Ancien port HTTP 14201 ferme sur Windows.
+OK - HTTP public redirige vers HTTPS (308).

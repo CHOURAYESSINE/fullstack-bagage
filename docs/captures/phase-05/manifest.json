@@ -1,0 +1,30 @@
+{
+  "dateUtc": "2026-10-02T18:56:36.246734+00:00",
+  "captures": [
+    {
+      "fichier": "01-site-public.jpg",
+      "origine": "Site public OVH HTTPS",
+      "sha256": "26a5103433c372edc5718cea172cd5ad86adfb1e53c98f31425366e29d010b55",
+      "octets": 79007
+    },
+    {
+      "fichier": "02-suivi-reel.jpg",
+      "origine": "Suivi fictif réellement chargé depuis OVH",
+      "sha256": "09b91c5c590e9b48318e543e2be43a04b8245e6273cbd5fa6fbe8c83a7b18bf4",
+      "octets": 92525
+    },
+    {
+      "fichier": "03-scan-internet-vm.png",
+      "origine": "Console VMware : scan Internet sans VPN",
+      "sha256": "934b54f1f595446ddb72efe1987dbc3c157708b2df6f547c746fe007279e3dc2",
+      "octets": 8699
+    },
+    {
+      "fichier": "04-interface-agents-vpn.png",
+      "origine": "Edge natif : interface agents par WireGuard",
+      "sha256": "a8ad934199f2e44c569bb5e3d8fd5891b74aee488863d62e34364618304125b4",
+      "octets": 66988
+    }
+  ],
+  "retouche": false
+}

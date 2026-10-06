@@ -1,0 +1,19 @@
+{
+  "dateUtc": "2026-10-02T09:46:30.2880605Z",
+  "checks": [
+    {
+      "test": "Interface Angular servie par URL Internet",
+      "resultat": "OK"
+    },
+    {
+      "test": "Recherche via formulaire affiche le vrai statut trie",
+      "resultat": "OK"
+    },
+    {
+      "test": "Historique affiche deux evenements reels",
+      "resultat": "OK"
+    }
+  ],
+  "url": "https://while-february-junior-childrens.trycloudflare.com",
+  "client": "Navigateur Codex sur Windows via URL Internet"
+}
