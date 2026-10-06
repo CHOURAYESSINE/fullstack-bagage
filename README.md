@@ -1,12 +1,12 @@
 # Gestion sécurisée des bagages aéroportuaires
 
-Projet de stage de Yessine Choura — IIT Sfax, ARSI.
+Projet de démonstration : application de gestion des bagages et sécurisation de son infrastructure.
 
-Répertoire de travail : `C:\Users\User\Desktop\fullstack-bagage`.
+Exécuter les commandes depuis la racine du projet.
 
 ## État au 2 octobre 2026
 
-**Phase 5 — Hébergement OVH validé pour la soutenance.** Site public : https://vps-8e16b3fe.vps.ovh.net. WireGuard Internet direct, recette métier, ports sensibles, restauration et reprise après redémarrage vérifiés. **174 contrôles OVH réussis**, en plus des 281 du laboratoire, et **38 captures réelles** au total. Voir [le guide OVH et les accès privés](docs/phases/05-ovh-soutenance.md) et [l’avancement](docs/AVANCEMENT.md). L'abonnement doit rester actif ; aucune résiliation ou modification du renouvellement n'a été effectuée.
+**Phase 5 — Hébergement OVH validé pour la soutenance.** WireGuard Internet direct, recette métier, ports sensibles, restauration et reprise après redémarrage vérifiés. **174 contrôles OVH réussis**, en plus des 281 du laboratoire, et **38 captures réelles** au total. Voir [le guide OVH et les accès privés](docs/phases/05-ovh-soutenance.md) et [l’avancement](docs/AVANCEMENT.md). L'abonnement doit rester actif ; aucune résiliation ou modification du renouvellement n'a été effectuée.
 
 La phase 1 est validée en natif et sous Docker : 39 tests fonctionnels, 9 tests de sécurité, 14 contrôles Docker et 2 contrôles de persistance réussis. Les preuves et captures réelles sont conservées dans `docs/`.
 La phase 2 Angular est également validée : 33 contrôles d'intégration et 21 vérifications dans le navigateur. La phase 3 est validée dans le laboratoire Docker : WireGuard, firewall et TLS, avec 40 contrôles réussis et trois captures réelles. La phase 4 Kubernetes est validée en laboratoire k3s avec 59 contrôles réussis. Le rapport technique est disponible dans docs/RAPPORT-PROJET.md.

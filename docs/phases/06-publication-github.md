@@ -1,16 +1,16 @@
 # Phase 6 — Publication du projet sur GitHub
 
 ## Objectif
-Conserver le code, le rapport et les preuves de réalisation dans un dépôt privé du compte CHOURAYESSINE.
+Conserver le code et les preuves de réalisation dans un dépôt privé du compte CHOURAYESSINE.
 
 ## Dépôt
 https://github.com/CHOURAYESSINE/fullstack-bagage
 
 ## Préparation
 - Dépôt Git initialisé dans le dossier fullstack-bagage, sur la branche main.
-- Auteur des commits : CHOURAYESSINE ; email : yessine1choura@gmail.com.
 - .env, work/, clés privées, dépendances et fichiers temporaires LaTeX exclus.
-- Rapport PDF, source LaTeX, 37 captures présentées et preuves documentées conservés.
+- Sources, captures du projet et preuves documentées conservées.
+- Le dossier rapport est retiré du dépôt ; une copie de récupération reste dans work, exclu de GitHub.
 - Vérification ciblée des fichiers texte pour détecter des clés privées, JWT et jetons GitHub ; les expressions de génération de clés ne sont pas des clés enregistrées.
 
 ## Mise à jour ultérieure
